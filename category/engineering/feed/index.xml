@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Engineering &#8211; Tony Jones | Product Designer</title>
+	<atom:link href="/category/engineering/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Designer and Engineer from New York</description>
+	<lastBuildDate>Tue, 17 Jul 2018 08:11:33 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.7</generator>
+	<item>
+		<title>Selection Sort, Sorting Algorithms in Java</title>
+		<link>/selection-sort-sorting-algorithms-in-java/</link>
+		<pubDate>Sun, 25 Dec 2016 03:51:10 +0000</pubDate>
+		<dc:creator><![CDATA[ad30jone]]></dc:creator>
+				<category><![CDATA[Engineering]]></category>
+
+		<guid isPermaLink="false">/?p=11</guid>
+		<description><![CDATA[Sorting is a fundamental of computer science theory, but it is also easy to forget. Selection Sort: Comparing Each Adjacent Item The next sorting algorithm in this series is the selection sort. Selection sort is also one of the easiest algorithms to understand and translate into functioning code. A basic example of a selection sort&#8230;]]></description>
+				<content:encoded><![CDATA[<h4><strong>Sorting is a fundamental of computer science theory, but it is also easy to forget.</strong></h4>
+<h4>Selection Sort: Comparing Each Adjacent Item</h4>
+<p>The next sorting algorithm in this series is the selection sort. Selection sort is also one of the easiest algorithms to understand and translate into functioning code.</p>
+<p>A basic example of a selection sort would be to line up ten people(all having varying heights) in a row. Find the shortest person in the line and switch them with the person in position one. Then, find the next shortest person and swap them with the person in position two. Repeat until all ten people are sorted from shortest to tallest.</p>
+<p>If we have a list with six items, we will need to make a comparison on the first element five times, the second element four times, the third element three times, etc.(5+4+3+…) From this, we can generalize that that worst-case runtime is 0(n²). Also, we will be using two for loops which also hints to a n² runtime.</p>
+<p>Here is a basic example of a selection sort in Java.</p>
+<pre class="m-b-16"><code>
+/**
+ * @author Anthony Jones
+ * @version 1.01
+ *
+ * This is the selection sort method. specifically
+ * an in place comparison sort
+ *
+ * @param A
+ * int array
+ */
+public static void selectionSort(int&lsqb;&rsqb; A) {
+  int temp;
+  for (int i = 0; i &amp;lt; A.length; i++) {
+    int n = i;
+    for (int j = i + 1; j &amp;lt; A.length; j++) {
+      if (A&lsqb;j&rsqb; &amp;lt; A&lsqb;n&rsqb;)
+        n = j;
+    }
+    temp = A&lsqb;i&rsqb;;
+    A&lsqb;i&rsqb; = A&lsqb;n&rsqb;;
+    A&lsqb;n&rsqb; = temp;
+  }
+}
+</code>
+</pre>
+<p>Lastly, don’t forget to test your code. Here is a JUnit test case I wrote to test if my result arrays were sorted.</p>
+<pre><code>
+/**
+* The test for selection sort method three for large array
+*
+* @author Anthony Jones
+* @version 1.01
+*/
+@Test
+public void selectionSortTestThree_Large() {
+  System.out.println();
+  System.out.println("Selection Sort Test Three");
+  int&lsqb;&rsqb; arr = { 1, 4, 2, 9, 7, 3, 10, 20, 11, 13, 19 };
+  System.out.println("intital array to be sorted");
+  for (int i = 0; i &amp;lt; arr.length; i++) {
+    System.out.print(arr&lsqb;i&rsqb;);
+  }
+  System.out.println();
+  int&lsqb;&rsqb; expected = { 1, 2, 3, 4, 7, 9, 10, 11, 13, 19, 20 };
+  System.out.println("expected array to be compared to");
+  for (int i = 0; i &amp;lt; expected.length; i++) {
+    System.out.print(expected&lsqb;i&rsqb;);
+  }
+  System.out.println();
+  System.out.println("intital array after the sort");
+  sortingAlgorithms.selectionSort(arr);
+  for (int i = 0; i &amp;lt; arr.length; i++) {
+    System.out.print(arr&lsqb;i&rsqb;);
+    assertEquals(arr&lsqb;i&rsqb;, expected&lsqb;i&rsqb;);
+  }
+}
+</code>
+</pre>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Bubble Sort, Sorting Algorithms in Java</title>
+		<link>/bubble-sort-sorting-algorithms-in-java/</link>
+		<pubDate>Fri, 23 Dec 2016 15:27:57 +0000</pubDate>
+		<dc:creator><![CDATA[ad30jone]]></dc:creator>
+				<category><![CDATA[Engineering]]></category>
+
+		<guid isPermaLink="false">/?p=23</guid>
+		<description><![CDATA[Sorting is a fundamental of computer science theory, but it is also easy to forget. Bubble Sort: Comparing Each Adjacent Item The first sorting algorithm that we will discuss in this series is the bubble sort. Bubble sort is one of the simplest algorithms to understand and translate into functioning code. A basic analogy of&#8230;]]></description>
+				<content:encoded><![CDATA[<h4><strong>Sorting is a fundamental of computer science theory, but it is also easy to forget.</strong></h4>
+<h4>Bubble Sort: Comparing Each Adjacent Item</h4>
+<p>The first sorting algorithm that we will discuss in this series is the bubble sort. Bubble sort is one of the simplest algorithms to understand and translate into functioning code.</p>
+<p>A basic analogy of a bubble sort would be to line up ten people(all have varying heights) in a row. Moving from left to right, if the current person’s height is greater than the next person’s height, swap them around. Repeat until all ten people are sorted from shortest to tallest.</p>
+<p>In the code, we would simply write a method for swapping two elements of an array and then with for loops, traverse the array until all items are sorted.</p>
+<p>The array will need to be traversed at least n-1(n is the number of objects in the array) times to ensure that all objects are sorted. While the bubble sort is useful as a learning tool, it is not one of the most efficient sorting algorithms. It’s worst case runtime is 0(n²), because we need to make n iterations through a list checking all n elements each pass through.</p>
+<p>Below is a basic example of a bubble sort in Java.</p>
+<pre><code>
+/**
+ * @author Anthony Jones
+ * @version 1.01
+ *
+ * This method repeatedly steps through the list
+ * and compares each adjacent item and sorts.
+ * @param A
+ * int array
+ */
+public static void bubbleSort(int&lsqb;&rsqb; A) {
+  boolean isSwapped;
+  int temp;
+  for (int i = 0; i &amp;lt; A.length; i++) { isSwapped = false; for (int j = A.length - 1; j &amp;gt;= i + 1; j--) {
+      if (A&lsqb;j&rsqb; &amp;lt; A&lsqb;j - 1&rsqb;) {
+        // Lines 19-22 can be replaced with a swap method
+        temp = A&lsqb;j&rsqb;;
+        A&lsqb;j&rsqb; = A&lsqb;j - 1&rsqb;;
+        A&lsqb;j - 1&rsqb; = temp;
+        isSwapped = true;
+      }
+    }
+    if (isSwapped != true)
+      break;
+  }
+  return;
+}
+</code>
+</pre>
+<p>This code can be further optimized. Please give it a try yourself and post a link to your solution in the comments. Here are some hints on how to improve the performance of your code.</p>
+<h2>Method 1:</h2>
+<p>After one iteration through the array, we don’t need to check the rightmost element because we already know that it is sorted. After two iterations, the last two elements in the array will be sorted. If we follow this pattern, we can generalize that after k iterations through the full array, checking the last k elements is redundant.</p>
+<h2>Method 2:</h2>
+<p>Check if the list is sorted after each iteration.</p>
+<p>Lastly, don’t forget to test your code. Here is a JUnit test case I wrote to test if my result arrays were sorted.</p>
+<pre><code>
+/**
+ * The test class bubbleSort method three.
+ *
+ * @author Anthony Jones
+ * @version 1.01
+ */
+@Test
+public void bubbleSortTestThree_Large() {
+  System.out.println();
+  System.out.println("Bubble Sort Test Three");
+  int&lsqb;&rsqb; arr = { 1, 5, 9, 2, 4, 3, 10, 20, 13, 15, 11 };
+  System.out.println("intital array to be sorted");
+  for (int i = 0; i &amp;lt; arr.length; i++) {
+    System.out.print(arr&lsqb;i&rsqb;);
+  }
+  System.out.println();
+  int&lsqb;&rsqb; expected = { 1, 2, 3, 4, 5, 9, 10, 11, 13, 15, 20 };
+  System.out.println("expected array to be compared to");
+  for (int i = 0; i &amp;lt; expected.length; i++) {
+    System.out.print(expected&lsqb;i&rsqb;);
+  }
+  System.out.println();
+  System.out.println("intital array after the sort");
+  sortingAlgorithms.bubbleSort(arr);
+  for (int i = 0; i &amp;lt; arr.length; i++) {
+    System.out.print(arr&lsqb;i&rsqb;);
+    assertEquals(arr&lsqb;i&rsqb;, expected&lsqb;i&rsqb;);
+  }
+}
+</code>
+</pre>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Android Accessibility at Google IO</title>
+		<link>/android-accessibility-at-google-io/</link>
+		<pubDate>Thu, 09 Jun 2016 15:36:33 +0000</pubDate>
+		<dc:creator><![CDATA[ad30jone]]></dc:creator>
+				<category><![CDATA[Engineering]]></category>
+
+		<guid isPermaLink="false">/?p=33</guid>
+		<description><![CDATA[A summary of Android accessibility services covered during talks at Google IO 2015 Phil Weaver, Eve Andersson, Casey Burkhardt, Hugh Oh, and Mark Riccobono presented at Google IO on Android accessibility and how we can remove and replace assumptions about users and how they interact with Android apps. I will briefly cover three means of&#8230;]]></description>
+				<content:encoded><![CDATA[<h4>A<strong> summary of Android accessibility services covered during talks at Google IO 2015</strong></h4>
+<p>Phil Weaver, Eve Andersson, Casey Burkhardt, Hugh Oh, and Mark Riccobono presented at Google IO on Android accessibility and how we can remove and replace assumptions about users and how they interact with Android apps.</p>
+<p>I will briefly cover three means of achieving this and the assumptions that come along with each technology.</p>
+<p><strong>TalkBack</strong>: this is a screen reader that adds spoken, audible, and vibration feedback to your device. It helps blind and vision-impaired users interact with their devices. It makes the assumption that users can hear but not see.</p>
+<p><a href="https://support.google.com/accessibility/android/answer/6007100?hl=en">Enable TalkBack</a></p>
+<p><strong>BrailleBack</strong>: BrailleBack allows users to connect a refreshable braille device via Bluetooth. Users can navigate using their display and input text using the braille keyboard. This tool assumes that users can’t hear or see.</p>
+<p><a href="http://Enable/ BrailleBack">Enable BrailleBack</a></p>
+<p><strong>Switch Access</strong>: this enables users to interact with a device using one or more buttons/switches that work like keyboard keys. This removes that assumption that a user can touch and interact with a screen with their hands.</p>
+<p><a href="https://support.google.com/accessibility/android/answer/6122836?hl=en">Enable Switch Access</a></p>
+<p>Developers have the important task of making sure application code can properly interact with these devices. Phil Weaver noted that the World Health Organization estimates 15% of people have some disability (1 billion people).</p>
+<p>Catching accessibility bugs as early as possible using automated testing(Android Lint, etc.) and manually testing are essential to making sure our Android applications can be using by everyone.</p>
+<p>The basic solutions making your apps accessible on Android are the following:</p>
+<p>1. Adding descriptions to all image that convey meaning</p>
+<pre class="m-b-16"><code>contentDescription="@string/desc"</code></pre>
+<p>2. Give users immediate feedback on view updates.</p>
+<pre class="m-b-16"><code>android:accessibilityLiveRegion="polite"</code></pre>
+<p>3. Remove redundant text</p>
+<pre class="m-b-16"><code>android:contentDescription="7 Button" // incorrect as screen reader reads "7 Button Button"
+android:contentDescription="7" // correct as screen reader reads "7 Button"</code></pre>
+<p>4. Remove extraneous clickable views on the screen</p>
+<pre class="m-b-16"><code>android:clickable="true" // Region 1
+android:clickable="true" // Region 2
+android:clickable="true" // Region 3</code></pre>
+<p>When using a tool such as Switch Access, users will have to scan through all regions that are clickable, so having extraneous clickable regions hinders the overall user experience.</p>
+<h4>In comes Accessibility Checker For Android!</h4>
+<p>Accessibility Checker is a new Google Research project and it looks specifically for accessibility defects. It will help us automatically find issues like: missing speakable descriptions and incorrectly labeled views. This is available today in both the Espresso(2.2+) and Robolectric testing frameworks.</p>
+<p><a href="https://code.google.com/p/android-test-kit/wiki/EspressoSetupInstructions">Setting up Espresso</a></p>
+<pre><code>
+/**
+* Enable Accessibility Checker in Espresso 2.2+
+*/
+@Test
+public void setUp() {
+AccessibilityChecks.enable(); // one extra line of code to enable accessibility checks
+}
+</code>
+</pre>
+<p><a href="http://robolectric.org/">Getting Started with Robolectric</a></p>
+<pre><code>
+/**
+* Enable Accessibility Checker in Robolectric
+*/
+@Test
+@AccessibilityChecks // One line Java annotation to enable accessibility checks
+public void testOneButton_shouldAddOne() {
+...
+}
+</code>
+</pre>
+<h4>Resources</h4>
+<p>For further reading and a more in-depth look at accessible application development in Android please visit <a href="http://developer.android.com/training/accessibility/accessible-app.html">Developing Accessible Applications</a></p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>A starter kit using only npm scripts for Jekyll static websites</title>
+		<link>/a-starter-kit-using-only-npm-scripts-for-jekyll-static-websites/</link>
+		<pubDate>Sun, 03 Apr 2016 15:28:38 +0000</pubDate>
+		<dc:creator><![CDATA[ad30jone]]></dc:creator>
+				<category><![CDATA[Engineering]]></category>
+
+		<guid isPermaLink="false">/?p=25</guid>
+		<description><![CDATA[When I originally started using Jekyll, I used Gulp JS for my build system. During a discussion with a colleague, he told me that I could achieve the similar functionality by using npm scripts alone. I decided to try and replace my Gulpfile with npm scripts alone. Out of this conversation came Jekyll Starter Kit,&#8230;]]></description>
+				<content:encoded><![CDATA[<p>When I originally started using Jekyll, I used Gulp JS for my build system. During a discussion with a colleague, he told me that I could achieve the similar functionality by using npm scripts alone. I decided to try and replace my Gulpfile with npm scripts alone.</p>
+<p>Out of this conversation came Jekyll Starter Kit, which is a project boilerplate with configurable tools for static site development. These tools provide synchronized cross-device testing with a focus on performance. This is a good starting point for developers who want to build a Jekyll site with fewer layers of abstraction in their tooling.</p>
+<h4>How it Works</h4>
+<p>Below is a snippet of the <a href="https://github.com/tony-jones/jekyll-starter-kit/blob/gh-pages/package.json">package.json</a> file. With NPM run scripts, you can define strings which will be run on the command line when you invoke the script. For example, you could have a script called &#8220;build&#8221; that runs other commands. You can also run any Unix or Windows command in the package.json file!</p>
+<pre><code>
+{
+  "name": "jekyll-starter-kit",
+  "version": "1.0.0",
+  "description": "jekyll, asset build using npm scripts",
+  "main": "src/scripts/main.js",
+  "scripts": {
+    "build:jekyll": "jekyll build --config _config.yml,_config-dev.yml",
+    "build:js": "npm run eslint &amp;amp;&amp;amp; npm run uglify",
+    "build:css": "npm run sass &amp;amp;&amp;amp; npm run prefix",
+    "build:font": "npm run font",
+    "build:images": "npm run imagemin",
+    "build": "npm run clean &amp;amp;&amp;amp; npm run build:js &amp;amp;&amp;amp; npm run build:css
+              &amp;amp;&amp;amp; npm run build:jekyll &amp;amp;&amp;amp; npm run critical"
+  }
+}
+</code>
+</pre>
+<p><a href="https://github.com/tony-jones/jekyll-starter-kit/releases/latest"><img class="wp-image-945 size-full aligncenter" src="/wp-content/uploads/2016/04/jsk-alpha.jpg" alt="" width="1010" height="650" srcset="/wp-content/uploads/2016/04/jsk-alpha.jpg 1010w, /wp-content/uploads/2016/04/jsk-alpha-300x193.jpg 300w, /wp-content/uploads/2016/04/jsk-alpha-768x494.jpg 768w, /wp-content/uploads/2016/04/jsk-alpha-900x579.jpg 900w" sizes="(max-width: 1010px) 100vw, 1010px" /></a></p>
+<h4>Performance</h4>
+<p>Jekyll Starter Kit strives to give you a high-performance starting point out of the box. By default, your project will have a 99/100 on PageSpeed Insights. You will need to add caching on your server (8 days recommended) to bring it to 100/100.</p>
+<p><img class="aligncenter wp-image-946 size-full" src="/wp-content/uploads/2016/04/f246f650-ce4c-11e5-9508-3d135978a6c9.png" alt="" width="1182" height="335" srcset="/wp-content/uploads/2016/04/f246f650-ce4c-11e5-9508-3d135978a6c9.png 1182w, /wp-content/uploads/2016/04/f246f650-ce4c-11e5-9508-3d135978a6c9-300x85.png 300w, /wp-content/uploads/2016/04/f246f650-ce4c-11e5-9508-3d135978a6c9-768x218.png 768w, /wp-content/uploads/2016/04/f246f650-ce4c-11e5-9508-3d135978a6c9-1024x290.png 1024w, /wp-content/uploads/2016/04/f246f650-ce4c-11e5-9508-3d135978a6c9-900x255.png 900w" sizes="(max-width: 1182px) 100vw, 1182px" /></p>
+<p>&nbsp;</p>
+]]></content:encoded>
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link rel="pingback" href="/xmlrpc.php">
+		<!-- Manifest added by SuperPWA - Progressive Web Apps Plugin For WordPress -->
+<link rel="manifest" href="/superpwa-manifest.json">
+<meta name="theme-color" content="#D5E0EB">
+<!-- / SuperPWA.com -->
+<meta http-equiv="x-dns-prefetch-control" content="on">
+	<link rel="dns-prefetch" href="//fonts.googleapis.com" />
+	<link rel="dns-prefetch" href="//fonts.gstatic.com" />
+	<link rel="dns-prefetch" href="//0.gravatar.com/" />
+	<link rel="dns-prefetch" href="//2.gravatar.com/" />
+	<link rel="dns-prefetch" href="//1.gravatar.com/" /><title>A starter kit using only npm scripts for Jekyll static websites &#8211; Tony Jones | Product Designer</title>
+<meta name='robots' content='noindex,follow' />
+<link rel='dns-prefetch' href='//use.typekit.net' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Tony Jones | Product Designer &raquo; Feed" href="/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Tony Jones | Product Designer &raquo; Comments Feed" href="/comments/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.4\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.4\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/tony.appmango.net\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.7"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55357,56692,8205,9792,65039],[55357,56692,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='thb-app-css'  href='/wp-content/themes/notio-wp/assets/css/app.css?ver=3.3.2' type='text/css' media='all' />
+<style id='thb-app-inline-css' type='text/css'>
+h1,h2,h3,h4,h5,h6,blockquote p,.thb-portfolio-filter .filters,.thb-portfolio .type-portfolio.hover-style5 .thb-categories {font-family:'Muli', 'BlinkMacSystemFont', -apple-system, 'Roboto', 'Lucida Sans';}body {font-family:'Muli', 'BlinkMacSystemFont', -apple-system, 'Roboto', 'Lucida Sans';}h1,.h1 {font-weight:300;}h2 {font-weight:300;}h3 {font-weight:300;}h4 {font-weight:300;}h5 {font-weight:300;}h6 {font-weight:300;}.footer p,.footer .widget p, .footer .widget ul li {font-family:'Muli', 'BlinkMacSystemFont', -apple-system, 'Roboto', 'Lucida Sans';}#full-menu .sf-menu > li > a {font-weight:300;}#full-menu .sub-menu li a {font-weight:300;}input[type="submit"],.button,.btn {font-family:'Muli', 'BlinkMacSystemFont', -apple-system, 'Roboto', 'Lucida Sans';}.mobile-menu a {font-family:'Muli', 'BlinkMacSystemFont', -apple-system, 'Roboto', 'Lucida Sans';}.footer .widget h6 {font-family:'Muli', 'BlinkMacSystemFont', -apple-system, 'Roboto', 'Lucida Sans';}.header .logolink .logoimg {max-height:30px;}.underline-link:after, .products .product .product_after_title .button:after, .wpb_text_column a:after, .widget.widget_price_filter .price_slider .ui-slider-handle, .btn.style5, .button.style5, input[type=submit].style5, .btn.style6, .button.style6, input[type=submit].style6, .btn.accent, .btn#place_order, .btn.checkout-button, .button.accent, .button#place_order, .button.checkout-button, input[type=submit].accent, input[type=submit]#place_order, input[type=submit].checkout-button,.products .product .product_after_title .button:after, .woocommerce-tabs .tabs li a:after, .woocommerce-MyAccount-navigation ul li:hover a, .woocommerce-MyAccount-navigation ul li.is-active a, .thb-client-row.has-border.thb-opacity.with-accent .thb-client:hover, .product-page .product-information .single_add_to_cart_button:hover {border-color:#ffc3d0;}.woocommerce-MyAccount-navigation ul li:hover + li a, .woocommerce-MyAccount-navigation ul li.is-active + li a {border-top-color:#ffc3d0;}a:hover, #full-menu .sf-menu > li.current-menu-item > a, #full-menu .sf-menu > li.sfHover > a, #full-menu .sf-menu > li > a:hover, .header_full_menu_submenu_color_style2 #full-menu .sub-menu a:hover, #full-menu .sub-menu li a:hover, .footer.style1 .social-links a.email:hover, .post .post-title a:hover, .widget.widget_recent_entries ul li .url, .widget.widget_recent_comments ul li .url, .widget.woocommerce.widget_layered_nav ul li .count, .widget.widget_price_filter .price_slider_amount .button, .widget.widget_price_filter .price_slider_amount .button:hover, .pagination .page-numbers.current, .btn.style3:before, .button.style3:before, input[type=submit].style3:before, .btn.style5:hover, .button.style5:hover, input[type=submit].style5:hover, .mobile-menu > li.current-menu-item > a, .mobile-menu > li.sfHover > a, .mobile-menu > li > a:hover, .mobile-menu > li > a.active, .mobile-menu .sub-menu li a:hover, .authorpage .author-content .square-icon:hover, .authorpage .author-content .square-icon.email:hover, #comments .commentlist .comment .reply, #comments .commentlist .comment .reply a, .thb-portfolio-filter.style1 .filters li a:hover, .thb-portfolio-filter.style1 .filters li a.active, .products .product .product_after_title .button, .product-page .product-information .price,.product-page .product-information .reset_variations, .product-page .product-information .product_meta > span a, .woocommerce-tabs .tabs li a:hover, .woocommerce-tabs .tabs li.active a, .woocommerce-info a:not(.button), .email:hover, .thb-iconbox.type3 > span, .thb_twitter_container.style1 .thb_tweet a{color:#ffc3d0;}.post.blog-style7 .post-gallery, .widget.widget_price_filter .price_slider .ui-slider-range, .btn.style5, .button.style5, input[type=submit].style5, .btn.style6, .button.style6, input[type=submit].style6, .btn.accent, .btn#place_order, .btn.checkout-button, .button.accent, .button#place_order, .button.checkout-button, input[type=submit].accent, input[type=submit]#place_order, input[type=submit].checkout-button, .content404 figure, .style2 .mobile-menu > li > a:before, .thb-portfolio.thb-text-style2 .type-portfolio:hover, .thb-portfolio-filter.style2 .filters li a:before, .woocommerce-MyAccount-navigation ul li:hover a, .woocommerce-MyAccount-navigation ul li.is-active a, .email.boxed-icon:hover, .email.boxed-icon.fill, .email.boxed-icon.white-fill:hover, .thb-iconbox.type2 > span, .thb-client-row.thb-opacity.with-accent .thb-client:hover, .product-page .product-information .single_add_to_cart_button:hover, .btn.style3:before, .button.style3:before, input[type=submit].style3:before {background-color:#ffc3d0;}.mobile-menu li.menu-item-has-children > a:hover .menu_icon {fill:#ffc3d0;}.thb-counter figure svg path,.thb-counter figure svg circle,.thb-counter figure svg rect,.thb-counter figure svg ellipse {stroke:#ffc3d0;}.button.checkout-button:hover,input[type=submit]#place_order:hover,.btn.accent:hover,.btn.style6:hover, .button.style6:hover, input[type=submit].style6:hover {background-color:#e6b0bb;border-color:#e6b0bb;}#full-menu .sub-menu li a:link { color:#ff96ad; }#full-menu .sub-menu li a:visited { color:#ff96ad; }.mobile-menu .sub-menu lia:link { color:#ff96ad; }.mobile-menu .sub-menu lia:visited { color:#ff96ad; }.thb-portfolio .post-722.type-portfolio.portfolio-style1:not(.hover-style6) .portfolio-link,.thb-portfolio .post-722.type-portfolio.portfolio-text-style-2:hover,#qp-portfolio-722:hover .qp-content {background:#d7ede6;}.thb-portfolio .post-722.type-portfolio.portfolio-style1.hover-style7 .portfolio-link {background:transparent;}.thb-portfolio .post-722.type-portfolio.portfolio-style1.hover-style7 .thb-placeholder:before {background:#d7ede6;}.thb-portfolio .post-79.type-portfolio.portfolio-style1:not(.hover-style6) .portfolio-link,.thb-portfolio .post-79.type-portfolio.portfolio-text-style-2:hover,#qp-portfolio-79:hover .qp-content {background:#ffe0e7;}.thb-portfolio .post-79.type-portfolio.portfolio-style1.hover-style7 .portfolio-link {background:transparent;}.thb-portfolio .post-79.type-portfolio.portfolio-style1.hover-style7 .thb-placeholder:before {background:#ffe0e7;}.thb-portfolio .post-54.type-portfolio.portfolio-style1:not(.hover-style6) .portfolio-link,.thb-portfolio .post-54.type-portfolio.portfolio-text-style-2:hover,#qp-portfolio-54:hover .qp-content {background:#ffe3d6;}.thb-portfolio .post-54.type-portfolio.portfolio-style1.hover-style7 .portfolio-link {background:transparent;}.thb-portfolio .post-54.type-portfolio.portfolio-style1.hover-style7 .thb-placeholder:before {background:#ffe3d6;}.thb-portfolio .post-13.type-portfolio.portfolio-style1:not(.hover-style6) .portfolio-link,.thb-portfolio .post-13.type-portfolio.portfolio-text-style-2:hover,#qp-portfolio-13:hover .qp-content {background:#cbcbf4;}.thb-portfolio .post-13.type-portfolio.portfolio-style1.hover-style7 .portfolio-link {background:transparent;}.thb-portfolio .post-13.type-portfolio.portfolio-style1.hover-style7 .thb-placeholder:before {background:#cbcbf4;}.thb-portfolio .post-50.type-portfolio.portfolio-style1:not(.hover-style6) .portfolio-link,.thb-portfolio .post-50.type-portfolio.portfolio-text-style-2:hover,#qp-portfolio-50:hover .qp-content {background:#e8e8e8;}.thb-portfolio .post-50.type-portfolio.portfolio-style1.hover-style7 .portfolio-link {background:transparent;}.thb-portfolio .post-50.type-portfolio.portfolio-style1.hover-style7 .thb-placeholder:before {background:#e8e8e8;}.thb-portfolio .post-60.type-portfolio.portfolio-style1:not(.hover-style6) .portfolio-link,.thb-portfolio .post-60.type-portfolio.portfolio-text-style-2:hover,#qp-portfolio-60:hover .qp-content {background:#d0efe6;}.thb-portfolio .post-60.type-portfolio.portfolio-style1.hover-style7 .portfolio-link {background:transparent;}.thb-portfolio .post-60.type-portfolio.portfolio-style1.hover-style7 .thb-placeholder:before {background:#d0efe6;}.thb-portfolio .post-57.type-portfolio.portfolio-style1:not(.hover-style6) .portfolio-link,.thb-portfolio .post-57.type-portfolio.portfolio-text-style-2:hover,#qp-portfolio-57:hover .qp-content {background:#e5e5e5;}.thb-portfolio .post-57.type-portfolio.portfolio-style1.hover-style7 .portfolio-link {background:transparent;}.thb-portfolio .post-57.type-portfolio.portfolio-style1.hover-style7 .thb-placeholder:before {background:#e5e5e5;}p a { color:#ff89a3;}.thb-portfolio .type-portfolio .thb-categories {text-transform:none;font-size:14px;}.thb_styled_header.style1 {font-weight:300;letter-spacing:-0.03em;font-size:56px;text-transform:none;}blockquote p {font-weight:300;}.wpb_single_image .vc_figure-caption {margin-top:25px !important;font-style:italic !important;font-size:16px !important;color:#96a3ad !important;line-height:16px !important;}.hljs {padding:1.5em !important;background:#f7fbff !important;border-radius:5px !important;}.m-b-16 {margin-bottom:16px !important;}
+</style>
+<link rel='stylesheet' id='thb-style-css'  href='/wp-content/themes/notio-wp/style.css' type='text/css' media='all' />
+<link rel='stylesheet' id='thb-google-fonts-css'  href='https://fonts.googleapis.com/css?family=Muli%3A300%2C400%2C500%2C600%2C700&#038;subset=latin&#038;ver=4.9.7' type='text/css' media='all' />
+<link rel='stylesheet' id='github-css'  href='/wp-content/plugins/cc-syntax-highlight/highlight/github.css?ver=1.2.0' type='text/css' media='all' />
+<link rel='stylesheet' id='clipboard-css'  href='/wp-content/plugins/cc-syntax-highlight/clipboard/clipboard.css?ver=1.2.0' type='text/css' media='all' />
+<script type='text/javascript' src='/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='https://use.typekit.net/jkc5bgx.js'></script>
+<script type='text/javascript'>
+try{Typekit.load({ async: true });}catch(e){}
+</script>
+<script type='text/javascript' src='/wp-content/plugins/cc-syntax-highlight/highlight/highlight.pack.js?ver=1.2.0'></script>
+<link rel='https://api.w.org/' href='/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Accessible Typography for Designers' href='/accessible-typography-for-designers/' />
+<link rel='next' title='Android Accessibility at Google IO' href='/android-accessibility-at-google-io/' />
+<meta name="generator" content="WordPress 4.9.7" />
+<link rel="canonical" href="/a-starter-kit-using-only-npm-scripts-for-jekyll-static-websites/" />
+<link rel='shortlink' href='/?p=25' />
+<link rel="alternate" type="application/json+oembed" href="/wp-json/oembed/1.0/embed?url=http%3A%2F%2F%2Fa-starter-kit-using-only-npm-scripts-for-jekyll-static-websites%2F" />
+<link rel="alternate" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=http%3A%2F%2F%2Fa-starter-kit-using-only-npm-scripts-for-jekyll-static-websites%2F&#038;format=xml" />
+<style type="text/css" id="custom-background-css">
+body.custom-background { background-color: #ffffff; }
+</style>
+		<style type="text/css" id="wp-custom-css">
+			.thb-portfolio .type-portfolio.portfolio-style2:hover .thb-placeholder {
+    opacity: 1;
+	  transform: scale(.97);
+}
+
+.thb-portfolio .type-portfolio.portfolio-style2 .portfolio-inner {
+    background: transparent;
+}
+
+.thb-portfolio .type-portfolio.portfolio-style2 .thb-placeholder, 
+.thb-portfolio-filter.style2 .filters li a:before {
+    -moz-transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+    -o-transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+    -webkit-transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+}		</style>
+	<noscript><style type="text/css"> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript></head>
+<body class="post-template-default single single-post postid-25 single-format-standard custom-background mobile_menu_position_right mobile_menu_style_style2 header_style_style2 header_full_menu_off footer_style_style2 site_bars_on preloader_on header_full_menu_submenu_color_style1 footer_simple_fixed_off  wpb-js-composer js-comp-ver-5.5.2 vc_responsive">
+<!-- Start Loader -->
+<div class="pace"></div>
+<!-- End Loader -->
+<div id="wrapper" class="open">
+	
+	<!-- Start Mobile Menu -->
+	<nav id="mobile-menu" class="style2">
+	<div class="spacer"></div>
+	<div class="menu-container custom_scroll">
+		<a href="#" class="panel-close"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 64 64" enable-background="new 0 0 64 64"><g fill="none" stroke="#000" stroke-width="2" stroke-miterlimit="10"><path d="m18.947 17.15l26.1 25.903"/><path d="m19.05 43.15l25.902-26.1"/></g></svg></a>
+		<div class="menu-holder">
+						  <ul id="menu-navigation" class="mobile-menu"><li id="menu-item-512" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-512"><a href="#">Projects</a>
+<ul class="sub-menu" >
+	<li id="menu-item-972" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-972"><a href="/portfolio/annual-payments/">Annual Payments</a></li>
+	<li id="menu-item-973" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-973"><a href="/portfolio/help-scout-customer-sidebar/">Customer Sidebar</a></li>
+	<li id="menu-item-974" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-974"><a href="/portfolio/uva-library/">Library Homepage</a></li>
+	<li id="menu-item-975" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-975"><a href="/portfolio/fitden/">Fitden</a></li>
+	<li id="menu-item-976" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-976"><a href="/portfolio/nooz/">Nooz</a></li>
+	<li id="menu-item-977" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-977"><a href="/portfolio/libra-repository/">Libra Repository</a></li>
+	<li id="menu-item-978" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-978"><a href="/portfolio/metis-machine/">Metis Machine</a></li>
+</ul>
+</li>
+<li id="menu-item-956" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-956"><a href="/about/">About</a></li>
+<li id="menu-item-573" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-573"><a href="/blog/">Blog</a></li>
+</ul>					</div>
+		
+		<div class="menu-footer">
+			<p>&nbsp;</p>
+<p><a href="mailto:ad30jone@gmail.com"><strong>ad30jone@gmail.com</strong></a></p>			<div class="social-links">
+							<a href="https://dribbble.com/iamtonybagels" class="dribbble icon-1x" target="_blank">
+				<i class="fa fa-dribbble"></i>
+							</a>			<a href="https://twitter.com/iamtonybagels" class="twitter icon-1x" target="_blank">
+				<i class="fa fa-twitter"></i>
+							</a>			<a href="https://github.com/tony-jones" class="github icon-1x" target="_blank">
+				<i class="fa fa-github"></i>
+							</a>			<a href="https://www.instagram.com/iamtonybagels/" class="instagram icon-1x" target="_blank">
+				<i class="fa fa-instagram"></i>
+							</a>			<a href="https://www.linkedin.com/in/tony-jones-18690b33" class="linkedin icon-1x" target="_blank">
+				<i class="fa fa-linkedin"></i>
+							</a>			<a href="" class="facebook icon-1x" target="_blank">
+				<i class="fa fa-facebook"></i>
+							</a>			</div>
+					</div>
+	</div>
+</nav>	<!-- End Mobile Menu -->
+	
+	<!-- Start Quick Cart -->
+		<!-- End Quick Cart -->
+		
+	<!-- Start Header -->
+	<header class="header style2">
+	<div class="row align-middle full-width-row no-padding">
+		<div class="small-12 columns">
+			<div class="logo-holder">
+								<a href="/" class="logolink">
+					<img src="/wp-content/uploads/2018/04/logo-green-light.png" class="logoimg" alt="Tony Jones | Product Designer"/>
+				</a>
+			</div>
+			<div class="menu-holder icon-holder">
+													<nav id="full-menu" role="navigation">
+												  <ul id="menu-navigation-1" class="sf-menu"><li id="menu-item-512" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-512"><a href="#">Projects</a>
+<ul class="sub-menu" >
+	<li id="menu-item-972" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-972"><a href="/portfolio/annual-payments/">Annual Payments</a></li>
+	<li id="menu-item-973" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-973"><a href="/portfolio/help-scout-customer-sidebar/">Customer Sidebar</a></li>
+	<li id="menu-item-974" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-974"><a href="/portfolio/uva-library/">Library Homepage</a></li>
+	<li id="menu-item-975" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-975"><a href="/portfolio/fitden/">Fitden</a></li>
+	<li id="menu-item-976" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-976"><a href="/portfolio/nooz/">Nooz</a></li>
+	<li id="menu-item-977" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-977"><a href="/portfolio/libra-repository/">Libra Repository</a></li>
+	<li id="menu-item-978" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-978"><a href="/portfolio/metis-machine/">Metis Machine</a></li>
+</ul>
+</li>
+<li id="menu-item-956" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-956"><a href="/about/">About</a></li>
+<li id="menu-item-573" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-573"><a href="/blog/">Blog</a></li>
+</ul>											</nav>
+																				<a href="#" data-target="open-menu" class="mobile-toggle">
+					<div>
+						<span></span><span></span><span></span>
+					</div>
+				</a>
+							</div>
+		</div>
+	</div>
+</header>	<!-- End Header -->
+	
+			<!-- Start Left Bar -->
+		<aside id="bar-left" class="bar-side left-side site_bars_portfolio-on">
+			<div class="abs"></div>
+					</aside>
+		<!-- End Left Bar -->
+		
+		<!-- Start Right Bar -->
+		<aside id="bar-right" class="bar-side right-side site_bars_portfolio-on active">
+			<div class="abs right-side"><strong>View All Works</strong> - Hover Me</div>
+							<div class="thb-quick-portfolio">
+					<div class="thb-quick-inner">
+													<a class="quick-portfolio dark-title" id="qp-portfolio-722" href="/portfolio/annual-payments/">
+								<div class="figure" style="background-image: url(/wp-content/uploads/2018/07/annual-payments-feature-241x300.jpg);"></div>
+								<div class="qp-content">
+									<h5>Annual Payments</h5>
+																		<aside class="thb-categories">Product, Web</aside>
+																	</div>
+							</a>
+													<a class="quick-portfolio dark-title" id="qp-portfolio-79" href="/portfolio/help-scout-customer-sidebar/">
+								<div class="figure" style="background-image: url(/wp-content/uploads/2018/07/sidebar-apps-thumb-300x225.jpg);"></div>
+								<div class="qp-content">
+									<h5>Help Scout Customer Sidebar</h5>
+																		<aside class="thb-categories">Product, Web</aside>
+																	</div>
+							</a>
+													<a class="quick-portfolio dark-title" id="qp-portfolio-13" href="/portfolio/fitden/">
+								<div class="figure" style="background-image: url(/wp-content/uploads/2018/07/fitden-featured-300x220.jpg);"></div>
+								<div class="qp-content">
+									<h5>Fitden</h5>
+																		<aside class="thb-categories">Mobile, Product</aside>
+																	</div>
+							</a>
+													<a class="quick-portfolio dark-title" id="qp-portfolio-50" href="/portfolio/nooz/">
+								<div class="figure" style="background-image: url(/wp-content/uploads/2018/07/nooz-featured-242x300.jpg);"></div>
+								<div class="qp-content">
+									<h5>Nooz</h5>
+																		<aside class="thb-categories">Mobile, Product</aside>
+																	</div>
+							</a>
+													<a class="quick-portfolio dark-title" id="qp-portfolio-54" href="/portfolio/uva-library/">
+								<div class="figure" style="background-image: url(/wp-content/uploads/2018/07/library-featured-241x300.jpg);"></div>
+								<div class="qp-content">
+									<h5>UVA Library Homepage</h5>
+																		<aside class="thb-categories">Product, Web</aside>
+																	</div>
+							</a>
+													<a class="quick-portfolio dark-title" id="qp-portfolio-57" href="/portfolio/metis-machine/">
+								<div class="figure" style="background-image: url(/wp-content/uploads/2018/07/metis-featured-241x300.jpg);"></div>
+								<div class="qp-content">
+									<h5>Metis Machine</h5>
+																		<aside class="thb-categories">Branding, Web</aside>
+																	</div>
+							</a>
+											</div>
+				</div>
+					</aside>
+		<!-- End Right Bar -->
+		
+	<div role="main" class="cf">		  <article itemscope itemtype="http://schema.org/BlogPosting" class="post blog-post post-25 type-post status-publish format-standard has-post-thumbnail hentry category-engineering" id="post-25" role="article">
+	  		  						<figure class="post-gallery parallax">
+					<div class="parallax_bg" 
+						data-top-bottom="transform: translate3d(0px, 60%, 0px);"
+						data-80-top="transform: translate3d(0px, 0%, 0px);" 
+						data-smooth-scrolling="off"
+						style="background-image: url('/wp-content/uploads/2018/04/kit.jpg');">
+					</div>
+				</figure>
+						<div class="row max_width">
+				<div class="small-12 medium-10 large-8 medium-centered columns">
+					<header class="post-title">
+						<aside class="post-meta cf">
+		April 3, 2016 / <a href="/category/engineering/" rel="category tag">Engineering</a></aside>						<h1 itemprop="headline">A starter kit using only npm scripts for Jekyll static websites</h1>
+					</header>
+					<div class="post-content">
+						<p>When I originally started using Jekyll, I used Gulp JS for my build system. During a discussion with a colleague, he told me that I could achieve the similar functionality by using npm scripts alone. I decided to try and replace my Gulpfile with npm scripts alone.</p>
+<p>Out of this conversation came Jekyll Starter Kit, which is a project boilerplate with configurable tools for static site development. These tools provide synchronized cross-device testing with a focus on performance. This is a good starting point for developers who want to build a Jekyll site with fewer layers of abstraction in their tooling.</p>
+<h4>How it Works</h4>
+<p>Below is a snippet of the <a href="https://github.com/tony-jones/jekyll-starter-kit/blob/gh-pages/package.json">package.json</a> file. With NPM run scripts, you can define strings which will be run on the command line when you invoke the script. For example, you could have a script called &#8220;build&#8221; that runs other commands. You can also run any Unix or Windows command in the package.json file!</p>
+<pre><code>
+{
+  "name": "jekyll-starter-kit",
+  "version": "1.0.0",
+  "description": "jekyll, asset build using npm scripts",
+  "main": "src/scripts/main.js",
+  "scripts": {
+    "build:jekyll": "jekyll build --config _config.yml,_config-dev.yml",
+    "build:js": "npm run eslint &amp;amp;&amp;amp; npm run uglify",
+    "build:css": "npm run sass &amp;amp;&amp;amp; npm run prefix",
+    "build:font": "npm run font",
+    "build:images": "npm run imagemin",
+    "build": "npm run clean &amp;amp;&amp;amp; npm run build:js &amp;amp;&amp;amp; npm run build:css
+              &amp;amp;&amp;amp; npm run build:jekyll &amp;amp;&amp;amp; npm run critical"
+  }
+}
+</code>
+</pre>
+<p><a href="https://github.com/tony-jones/jekyll-starter-kit/releases/latest"><img class="wp-image-945 size-full aligncenter" src="/wp-content/uploads/2016/04/jsk-alpha.jpg" alt="" width="1010" height="650" srcset="/wp-content/uploads/2016/04/jsk-alpha.jpg 1010w, /wp-content/uploads/2016/04/jsk-alpha-300x193.jpg 300w, /wp-content/uploads/2016/04/jsk-alpha-768x494.jpg 768w, /wp-content/uploads/2016/04/jsk-alpha-900x579.jpg 900w" sizes="(max-width: 1010px) 100vw, 1010px" /></a></p>
+<h4>Performance</h4>
+<p>Jekyll Starter Kit strives to give you a high-performance starting point out of the box. By default, your project will have a 99/100 on PageSpeed Insights. You will need to add caching on your server (8 days recommended) to bring it to 100/100.</p>
+<p><img class="aligncenter wp-image-946 size-full" src="/wp-content/uploads/2016/04/f246f650-ce4c-11e5-9508-3d135978a6c9.png" alt="" width="1182" height="335" srcset="/wp-content/uploads/2016/04/f246f650-ce4c-11e5-9508-3d135978a6c9.png 1182w, /wp-content/uploads/2016/04/f246f650-ce4c-11e5-9508-3d135978a6c9-300x85.png 300w, /wp-content/uploads/2016/04/f246f650-ce4c-11e5-9508-3d135978a6c9-768x218.png 768w, /wp-content/uploads/2016/04/f246f650-ce4c-11e5-9508-3d135978a6c9-1024x290.png 1024w, /wp-content/uploads/2016/04/f246f650-ce4c-11e5-9508-3d135978a6c9-900x255.png 900w" sizes="(max-width: 1182px) 100vw, 1182px" /></p>
+<p>&nbsp;</p>
+											</div>
+					 
+<footer class="article-tags entry-footer">
+	</footer>
+ 
+	 
+					</div>
+			</div>
+				<aside class="post-bottom-meta hide">
+		<strong rel="author" itemprop="author" class="author vcard"><span class="fn">ad30jone</span></strong>
+		<time class="date published time" datetime="2016-04-03T15:28:38+00:00" itemprop="datePublished" content="2016-04-03T15:28:38+00:00">April 3, 2016</time>
+		<meta itemprop="dateModified" class="date updated" content="2018-07-16T07:54:52+00:00">
+		<span class="hide" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+			<meta itemprop="name" content="Tony Jones | Product Designer">
+			<span itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+				<meta itemprop="url" content="http://tony.appmango.net/wp-content/themes/notio-wp/assets/img/logo.png">
+			</span>
+			<meta itemprop="url" content="http://tony.appmango.net/">
+		</span>
+				<span class="hide" itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+		  <meta itemprop="url" content="http://tony.appmango.net/wp-content/uploads/2018/04/kit.jpg">
+		  <meta itemprop="width" content="1200">
+		  <meta itemprop="height" content="820">
+		</span>
+				<meta itemscope itemprop="mainEntityOfPage" itemtype="https://schema.org/WebPage" itemid="http://tony.appmango.net/a-starter-kit-using-only-npm-scripts-for-jekyll-static-websites/">
+	</aside>
+		  </article>
+	  <!-- Start #comments -->
+	  <section id="comments">
+	  		<p class="nocomments">Comments are closed</p>
+
+
+<div class="row">
+	<div class="small-12 medium-10 large-8 medium-centered columns no-border">
+	</div>
+</div>	  </section>
+	  <!-- End #comments -->
+	  	<div class="portfolio_nav">
+		<div class="row full-width-row">
+			<div class="small-5 columns">
+									<a href="/accessible-typography-for-designers/" class="post_nav_link prev">
+						<figure>
+							<img width="50" height="50" src="/wp-content/uploads/2018/04/same-everyone-150x150.jpg" class="attachment-50x50 size-50x50 wp-post-image" alt="" />							<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 64 64" enable-background="new 0 0 64 64"><path fill="none" stroke="#000" stroke-width="2" stroke-linejoin="bevel" stroke-miterlimit="10" d="M37 15 20 32 37 49"/></svg>						</figure>
+						
+						<strong>
+															Previous Post (p)													</strong>
+						<span>Accessible Typography for Designers</span>
+					</a>
+							</div>
+			<div class="small-2 columns center_link">
+				<aside class="share_wrapper">
+	<a href="#" class="share-post-link">Share</a>
+	<div class="share_container">
+		<div class="spacer"></div>
+		<div class="row max_width align-center">
+			<div class="small-12 large-10 columns">
+				<div class="vcenter">
+					<div class="product_share">
+						<h4>Share This Work</h4>
+												<a href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Ftony.appmango.net%2Fa-starter-kit-using-only-npm-scripts-for-jekyll-static-websites%2F" class="social facebook boxed-icon white-fill"><i class="fa fa-facebook"></i></a>
+																		<a href="https://twitter.com/intent/tweet?text=A+starter+kit+using+only+npm+scripts+for+Jekyll+static+websites&url=http%3A%2F%2Ftony.appmango.net%2Fa-starter-kit-using-only-npm-scripts-for-jekyll-static-websites%2F&via=Tony+Jones+%7C+Product+Designer" class="social twitter boxed-icon white-fill"><i class="fa fa-twitter"></i></a>
+																		<a href="http://pinterest.com/pin/create/link/?url=http://tony.appmango.net/a-starter-kit-using-only-npm-scripts-for-jekyll-static-websites/&amp;media=http://tony.appmango.net/wp-content/uploads/2018/04/kit.jpg&description=A+starter+kit+using+only+npm+scripts+for+Jekyll+static+websites" class="social pinterest boxed-icon white-fill" nopin="nopin" data-pin-no-hover="true"><i class="fa fa-pinterest"></i></a>
+																		<a href="http://plus.google.com/share?url=http://tony.appmango.net/a-starter-kit-using-only-npm-scripts-for-jekyll-static-websites/" class="social google-plus boxed-icon white-fill"><i class="fa fa-google-plus"></i></a>
+																																			</div>
+					<div class="product_copy">
+						<h4>Copy Link to Clipboard</h4>
+						<form>
+							<input type="text" class="copy-value" value="http://tony.appmango.net/a-starter-kit-using-only-npm-scripts-for-jekyll-static-websites/" readonly>
+							<a class="btn blue">Copy</a>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</aside>
+			</div>
+			<div class="small-5 columns">
+									<a href="/android-accessibility-at-google-io/" class="post_nav_link next">
+						
+						<strong>
+															Next Post (n)													</strong>
+						<span>Android Accessibility at Google IO</span>
+						<figure>
+							<img width="50" height="50" src="/wp-content/uploads/2018/04/code-150x150.jpg" class="attachment-50x50 size-50x50 wp-post-image" alt="" />							<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 64 64" enable-background="new 0 0 64 64"><path fill="none" stroke="#000" stroke-width="2" stroke-linejoin="bevel" stroke-miterlimit="10" d="m27 15l17 17-17 17"/></svg>						</figure>
+					</a>
+							</div>
+		</div>
+	</div>
+	  	</div><!-- End role["main"] -->
+	</div> <!-- End #wrapper -->
+	<a href="#" id="scroll_totop"><svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 64 64" enable-background="new 0 0 64 64"><path fill="none" stroke="#000" stroke-width="2" stroke-linejoin="bevel" stroke-miterlimit="10" d="m15 40l17-17 17 17"/></svg></a>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var superpwa_sw = {"url":"\/superpwa-sw.js"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='/wp-content/plugins/super-progressive-web-apps/public/js/register-sw.js'></script>
+<script type='text/javascript' src='/wp-content/themes/notio-wp/assets/js/vendor.min.js?ver=3.3.2'></script>
+<script type='text/javascript' src='/wp-includes/js/underscore.min.js?ver=1.8.3'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var themeajax = {"url":"http:\/\/tony.appmango.net\/wp-admin\/admin-ajax.php","l10n":{"loading":"Loading ...","nomore":"No More Posts","added":"Added To Cart","copied":"Copied"},"settings":{"keyboard_nav":"on","is_cart":false,"is_checkout":false},"arrows":{"left":"<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" viewBox=\"0 0 64 64\" enable-background=\"new 0 0 64 64\"><g fill=\"none\" stroke=\"#000\" stroke-width=\"2\" stroke-miterlimit=\"10\"><path d=\"m64 32h-63\"\/><path stroke-linejoin=\"bevel\" d=\"m10 23l-9 9 9 9\"\/><\/g><\/svg>","right":"<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" viewBox=\"0 0 64 64\" enable-background=\"new 0 0 64 64\"><g fill=\"none\" stroke=\"#000\" stroke-width=\"2\" stroke-miterlimit=\"10\"><path d=\"m0 32h63\"\/><path stroke-linejoin=\"bevel\" d=\"m54 41l9-9-9-9\"\/><\/g><\/svg>"}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='/wp-content/themes/notio-wp/assets/js/app.min.js?ver=3.3.2'></script>
+<script type='text/javascript' src='/wp-content/plugins/cc-syntax-highlight/highlight/syntax_highlight.js?ver=1.2.0'></script>
+<script type='text/javascript' src='/wp-content/plugins/cc-syntax-highlight/clipboard/clipboard.min.js?ver=1.2.0'></script>
+<script type='text/javascript' src='/wp-content/plugins/cc-syntax-highlight/clipboard/clipboard.js?ver=1.2.0'></script>
+<script type='text/javascript' src='/wp-includes/js/wp-embed.min.js?ver=4.9.7'></script>
+</body>
+</html>
+<!--Generated by Endurance Page Cache-->

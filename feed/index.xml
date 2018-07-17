@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Tony Jones | Product Designer</title>
+	<atom:link href="/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Designer and Engineer from New York</description>
+	<lastBuildDate>Tue, 17 Jul 2018 08:11:33 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.7</generator>
+	<item>
+		<title>Selection Sort, Sorting Algorithms in Java</title>
+		<link>/selection-sort-sorting-algorithms-in-java/</link>
+		<pubDate>Sun, 25 Dec 2016 03:51:10 +0000</pubDate>
+		<dc:creator><![CDATA[ad30jone]]></dc:creator>
+				<category><![CDATA[Engineering]]></category>
+
+		<guid isPermaLink="false">/?p=11</guid>
+		<description><![CDATA[Sorting is a fundamental of computer science theory, but it is also easy to forget. Selection Sort: Comparing Each Adjacent Item The next sorting algorithm in this series is the selection sort. Selection sort is also one of the easiest algorithms to understand and translate into functioning code. A basic example of a selection sort&#8230;]]></description>
+				<content:encoded><![CDATA[<h4><strong>Sorting is a fundamental of computer science theory, but it is also easy to forget.</strong></h4>
+<h4>Selection Sort: Comparing Each Adjacent Item</h4>
+<p>The next sorting algorithm in this series is the selection sort. Selection sort is also one of the easiest algorithms to understand and translate into functioning code.</p>
+<p>A basic example of a selection sort would be to line up ten people(all having varying heights) in a row. Find the shortest person in the line and switch them with the person in position one. Then, find the next shortest person and swap them with the person in position two. Repeat until all ten people are sorted from shortest to tallest.</p>
+<p>If we have a list with six items, we will need to make a comparison on the first element five times, the second element four times, the third element three times, etc.(5+4+3+…) From this, we can generalize that that worst-case runtime is 0(n²). Also, we will be using two for loops which also hints to a n² runtime.</p>
+<p>Here is a basic example of a selection sort in Java.</p>
+<pre class="m-b-16"><code>
+/**
+ * @author Anthony Jones
+ * @version 1.01
+ *
+ * This is the selection sort method. specifically
+ * an in place comparison sort
+ *
+ * @param A
+ * int array
+ */
+public static void selectionSort(int&lsqb;&rsqb; A) {
+  int temp;
+  for (int i = 0; i &amp;lt; A.length; i++) {
+    int n = i;
+    for (int j = i + 1; j &amp;lt; A.length; j++) {
+      if (A&lsqb;j&rsqb; &amp;lt; A&lsqb;n&rsqb;)
+        n = j;
+    }
+    temp = A&lsqb;i&rsqb;;
+    A&lsqb;i&rsqb; = A&lsqb;n&rsqb;;
+    A&lsqb;n&rsqb; = temp;
+  }
+}
+</code>
+</pre>
+<p>Lastly, don’t forget to test your code. Here is a JUnit test case I wrote to test if my result arrays were sorted.</p>
+<pre><code>
+/**
+* The test for selection sort method three for large array
+*
+* @author Anthony Jones
+* @version 1.01
+*/
+@Test
+public void selectionSortTestThree_Large() {
+  System.out.println();
+  System.out.println("Selection Sort Test Three");
+  int&lsqb;&rsqb; arr = { 1, 4, 2, 9, 7, 3, 10, 20, 11, 13, 19 };
+  System.out.println("intital array to be sorted");
+  for (int i = 0; i &amp;lt; arr.length; i++) {
+    System.out.print(arr&lsqb;i&rsqb;);
+  }
+  System.out.println();
+  int&lsqb;&rsqb; expected = { 1, 2, 3, 4, 7, 9, 10, 11, 13, 19, 20 };
+  System.out.println("expected array to be compared to");
+  for (int i = 0; i &amp;lt; expected.length; i++) {
+    System.out.print(expected&lsqb;i&rsqb;);
+  }
+  System.out.println();
+  System.out.println("intital array after the sort");
+  sortingAlgorithms.selectionSort(arr);
+  for (int i = 0; i &amp;lt; arr.length; i++) {
+    System.out.print(arr&lsqb;i&rsqb;);
+    assertEquals(arr&lsqb;i&rsqb;, expected&lsqb;i&rsqb;);
+  }
+}
+</code>
+</pre>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Bubble Sort, Sorting Algorithms in Java</title>
+		<link>/bubble-sort-sorting-algorithms-in-java/</link>
+		<pubDate>Fri, 23 Dec 2016 15:27:57 +0000</pubDate>
+		<dc:creator><![CDATA[ad30jone]]></dc:creator>
+				<category><![CDATA[Engineering]]></category>
+
+		<guid isPermaLink="false">/?p=23</guid>
+		<description><![CDATA[Sorting is a fundamental of computer science theory, but it is also easy to forget. Bubble Sort: Comparing Each Adjacent Item The first sorting algorithm that we will discuss in this series is the bubble sort. Bubble sort is one of the simplest algorithms to understand and translate into functioning code. A basic analogy of&#8230;]]></description>
+				<content:encoded><![CDATA[<h4><strong>Sorting is a fundamental of computer science theory, but it is also easy to forget.</strong></h4>
+<h4>Bubble Sort: Comparing Each Adjacent Item</h4>
+<p>The first sorting algorithm that we will discuss in this series is the bubble sort. Bubble sort is one of the simplest algorithms to understand and translate into functioning code.</p>
+<p>A basic analogy of a bubble sort would be to line up ten people(all have varying heights) in a row. Moving from left to right, if the current person’s height is greater than the next person’s height, swap them around. Repeat until all ten people are sorted from shortest to tallest.</p>
+<p>In the code, we would simply write a method for swapping two elements of an array and then with for loops, traverse the array until all items are sorted.</p>
+<p>The array will need to be traversed at least n-1(n is the number of objects in the array) times to ensure that all objects are sorted. While the bubble sort is useful as a learning tool, it is not one of the most efficient sorting algorithms. It’s worst case runtime is 0(n²), because we need to make n iterations through a list checking all n elements each pass through.</p>
+<p>Below is a basic example of a bubble sort in Java.</p>
+<pre><code>
+/**
+ * @author Anthony Jones
+ * @version 1.01
+ *
+ * This method repeatedly steps through the list
+ * and compares each adjacent item and sorts.
+ * @param A
+ * int array
+ */
+public static void bubbleSort(int&lsqb;&rsqb; A) {
+  boolean isSwapped;
+  int temp;
+  for (int i = 0; i &amp;lt; A.length; i++) { isSwapped = false; for (int j = A.length - 1; j &amp;gt;= i + 1; j--) {
+      if (A&lsqb;j&rsqb; &amp;lt; A&lsqb;j - 1&rsqb;) {
+        // Lines 19-22 can be replaced with a swap method
+        temp = A&lsqb;j&rsqb;;
+        A&lsqb;j&rsqb; = A&lsqb;j - 1&rsqb;;
+        A&lsqb;j - 1&rsqb; = temp;
+        isSwapped = true;
+      }
+    }
+    if (isSwapped != true)
+      break;
+  }
+  return;
+}
+</code>
+</pre>
+<p>This code can be further optimized. Please give it a try yourself and post a link to your solution in the comments. Here are some hints on how to improve the performance of your code.</p>
+<h2>Method 1:</h2>
+<p>After one iteration through the array, we don’t need to check the rightmost element because we already know that it is sorted. After two iterations, the last two elements in the array will be sorted. If we follow this pattern, we can generalize that after k iterations through the full array, checking the last k elements is redundant.</p>
+<h2>Method 2:</h2>
+<p>Check if the list is sorted after each iteration.</p>
+<p>Lastly, don’t forget to test your code. Here is a JUnit test case I wrote to test if my result arrays were sorted.</p>
+<pre><code>
+/**
+ * The test class bubbleSort method three.
+ *
+ * @author Anthony Jones
+ * @version 1.01
+ */
+@Test
+public void bubbleSortTestThree_Large() {
+  System.out.println();
+  System.out.println("Bubble Sort Test Three");
+  int&lsqb;&rsqb; arr = { 1, 5, 9, 2, 4, 3, 10, 20, 13, 15, 11 };
+  System.out.println("intital array to be sorted");
+  for (int i = 0; i &amp;lt; arr.length; i++) {
+    System.out.print(arr&lsqb;i&rsqb;);
+  }
+  System.out.println();
+  int&lsqb;&rsqb; expected = { 1, 2, 3, 4, 5, 9, 10, 11, 13, 15, 20 };
+  System.out.println("expected array to be compared to");
+  for (int i = 0; i &amp;lt; expected.length; i++) {
+    System.out.print(expected&lsqb;i&rsqb;);
+  }
+  System.out.println();
+  System.out.println("intital array after the sort");
+  sortingAlgorithms.bubbleSort(arr);
+  for (int i = 0; i &amp;lt; arr.length; i++) {
+    System.out.print(arr&lsqb;i&rsqb;);
+    assertEquals(arr&lsqb;i&rsqb;, expected&lsqb;i&rsqb;);
+  }
+}
+</code>
+</pre>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>UX Strategies For Increasing Online Donations</title>
+		<link>/ux-strategies-for-increasing-online-donations/</link>
+		<pubDate>Fri, 02 Sep 2016 15:28:56 +0000</pubDate>
+		<dc:creator><![CDATA[ad30jone]]></dc:creator>
+				<category><![CDATA[Design]]></category>
+
+		<guid isPermaLink="false">/?p=27</guid>
+		<description><![CDATA[Charities truly live or die by the user experience. Give Your Donors an Amazing Experience I recently spoke with a non-profit organization in North Carolina that needed an increase in charitable donations. During an assessment of their current site, I noticed that their online giving process needed some simplification and testing. Your goal should be&#8230;]]></description>
+				<content:encoded><![CDATA[<h4><strong>Charities truly live or die by the user experience. Give Your Donors an Amazing Experience</strong></h4>
+<p>I recently spoke with a non-profit organization in North Carolina that needed an increase in charitable donations. During an assessment of their current site, I noticed that their online giving process needed some simplification and testing. Your goal should be to simplify the process of making an online donation. This article will briefly guide you to some of the major things to look for. Getting people to open their wallets online is a very difficult thing to do, so I hope some of what you learn here can be used with your clients.</p>
+<h4>Donation Button</h4>
+<p>Ensure that the donate button is clear and distinct from the background and other elements on the page. User’s number one complaint is not knowing how to donate. Make this the easiest element to find on the page. Another important thing to remember is to change button text so they say what they do, instead of having a button labeled “submit”. This will help users navigate your site more efficiently.</p>
+<h4>Content has the Lead Role</h4>
+<p>This article won’t be covering content, but it is important to point out that content is the number one factor in increasing your conversions. Users love seeing uncluttered content that is easily scannable and consistent. Use language and offer content that is crafted specifically for the audience. Ask yourself if visitors can connect with the organization on any page of the site? If so, you are on your way to improved results.</p>
+<h4>Distinguish between one-time and monthly donations</h4>
+<p>There are two basic forms of donations that most charitable organizations accept: recurring payments and single donations. Make sure you allow users to select one or the other from the beginning of the process. Also, if the organization accepts any other forms of payment, include them as a third option as shown in the example below.</p>
+<p>I designed a mockup of recurring payments and a single donation button. This is the first step after a user clicks on the donate button.</p>
+<p>&nbsp;</p>
+<p><img class="aligncenter wp-image-953 size-full" src="/wp-content/uploads/2016/09/Donate-Page.jpg" alt="" width="1500" height="1125" srcset="/wp-content/uploads/2016/09/Donate-Page.jpg 1500w, /wp-content/uploads/2016/09/Donate-Page-300x225.jpg 300w, /wp-content/uploads/2016/09/Donate-Page-768x576.jpg 768w, /wp-content/uploads/2016/09/Donate-Page-1024x768.jpg 1024w, /wp-content/uploads/2016/09/Donate-Page-900x675.jpg 900w" sizes="(max-width: 1500px) 100vw, 1500px" /></p>
+<h4>A/B Testing</h4>
+<p>One of the most important things you will need to do to see increased donation conversions is through A/B Testing. Ensure that you are regularly benchmarking and testing the design, imagery, copy, usability and page speed. Some changes work well with certain audiences, but not others, so know your users and their behaviors.</p>
+<h4>Donation Form Best Practices</h4>
+<p>1. Put the easier field groups first to lower the engagement barrier<br />
+2. Make the form look short and easy to complete<br />
+3. Remove any unnecessary form fields<br />
+4. Eliminate body copy<br />
+5. Allow the ability to change details like donation amount<br />
+6. Indicate that the user’s information is secure (Note: I’m simply using a lock icon in the example below)<br />
+Example mockup of the payment details form</p>
+<p>&nbsp;</p>
+<p><img class="aligncenter wp-image-954 size-full" src="/wp-content/uploads/2016/09/Payment-Details.jpg" alt="" width="1500" height="1125" srcset="/wp-content/uploads/2016/09/Payment-Details.jpg 1500w, /wp-content/uploads/2016/09/Payment-Details-300x225.jpg 300w, /wp-content/uploads/2016/09/Payment-Details-768x576.jpg 768w, /wp-content/uploads/2016/09/Payment-Details-1024x768.jpg 1024w, /wp-content/uploads/2016/09/Payment-Details-900x675.jpg 900w" sizes="(max-width: 1500px) 100vw, 1500px" /></p>
+<p>Lastly, get creative and try out new things. For example, you could create a ‘donate via text messaging’ option for your mobile users. Again, test it out with tools like <a href="https://www.optimizely.com/">Optimizely</a> and <a href="http://www.google.com/analytics/">Google Analytics</a>, then monitor the results.</p>
+<p>For further reading, I recommend a book on persuasive design patterns called <a href="http://evilbydesign.info/">Evil By Design</a> by Chris Nodder. It is an excellent read on how to leverage human habits in our designs.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Android Accessibility at Google IO</title>
+		<link>/android-accessibility-at-google-io/</link>
+		<pubDate>Thu, 09 Jun 2016 15:36:33 +0000</pubDate>
+		<dc:creator><![CDATA[ad30jone]]></dc:creator>
+				<category><![CDATA[Engineering]]></category>
+
+		<guid isPermaLink="false">/?p=33</guid>
+		<description><![CDATA[A summary of Android accessibility services covered during talks at Google IO 2015 Phil Weaver, Eve Andersson, Casey Burkhardt, Hugh Oh, and Mark Riccobono presented at Google IO on Android accessibility and how we can remove and replace assumptions about users and how they interact with Android apps. I will briefly cover three means of&#8230;]]></description>
+				<content:encoded><![CDATA[<h4>A<strong> summary of Android accessibility services covered during talks at Google IO 2015</strong></h4>
+<p>Phil Weaver, Eve Andersson, Casey Burkhardt, Hugh Oh, and Mark Riccobono presented at Google IO on Android accessibility and how we can remove and replace assumptions about users and how they interact with Android apps.</p>
+<p>I will briefly cover three means of achieving this and the assumptions that come along with each technology.</p>
+<p><strong>TalkBack</strong>: this is a screen reader that adds spoken, audible, and vibration feedback to your device. It helps blind and vision-impaired users interact with their devices. It makes the assumption that users can hear but not see.</p>
+<p><a href="https://support.google.com/accessibility/android/answer/6007100?hl=en">Enable TalkBack</a></p>
+<p><strong>BrailleBack</strong>: BrailleBack allows users to connect a refreshable braille device via Bluetooth. Users can navigate using their display and input text using the braille keyboard. This tool assumes that users can’t hear or see.</p>
+<p><a href="http://Enable/ BrailleBack">Enable BrailleBack</a></p>
+<p><strong>Switch Access</strong>: this enables users to interact with a device using one or more buttons/switches that work like keyboard keys. This removes that assumption that a user can touch and interact with a screen with their hands.</p>
+<p><a href="https://support.google.com/accessibility/android/answer/6122836?hl=en">Enable Switch Access</a></p>
+<p>Developers have the important task of making sure application code can properly interact with these devices. Phil Weaver noted that the World Health Organization estimates 15% of people have some disability (1 billion people).</p>
+<p>Catching accessibility bugs as early as possible using automated testing(Android Lint, etc.) and manually testing are essential to making sure our Android applications can be using by everyone.</p>
+<p>The basic solutions making your apps accessible on Android are the following:</p>
+<p>1. Adding descriptions to all image that convey meaning</p>
+<pre class="m-b-16"><code>contentDescription="@string/desc"</code></pre>
+<p>2. Give users immediate feedback on view updates.</p>
+<pre class="m-b-16"><code>android:accessibilityLiveRegion="polite"</code></pre>
+<p>3. Remove redundant text</p>
+<pre class="m-b-16"><code>android:contentDescription="7 Button" // incorrect as screen reader reads "7 Button Button"
+android:contentDescription="7" // correct as screen reader reads "7 Button"</code></pre>
+<p>4. Remove extraneous clickable views on the screen</p>
+<pre class="m-b-16"><code>android:clickable="true" // Region 1
+android:clickable="true" // Region 2
+android:clickable="true" // Region 3</code></pre>
+<p>When using a tool such as Switch Access, users will have to scan through all regions that are clickable, so having extraneous clickable regions hinders the overall user experience.</p>
+<h4>In comes Accessibility Checker For Android!</h4>
+<p>Accessibility Checker is a new Google Research project and it looks specifically for accessibility defects. It will help us automatically find issues like: missing speakable descriptions and incorrectly labeled views. This is available today in both the Espresso(2.2+) and Robolectric testing frameworks.</p>
+<p><a href="https://code.google.com/p/android-test-kit/wiki/EspressoSetupInstructions">Setting up Espresso</a></p>
+<pre><code>
+/**
+* Enable Accessibility Checker in Espresso 2.2+
+*/
+@Test
+public void setUp() {
+AccessibilityChecks.enable(); // one extra line of code to enable accessibility checks
+}
+</code>
+</pre>
+<p><a href="http://robolectric.org/">Getting Started with Robolectric</a></p>
+<pre><code>
+/**
+* Enable Accessibility Checker in Robolectric
+*/
+@Test
+@AccessibilityChecks // One line Java annotation to enable accessibility checks
+public void testOneButton_shouldAddOne() {
+...
+}
+</code>
+</pre>
+<h4>Resources</h4>
+<p>For further reading and a more in-depth look at accessible application development in Android please visit <a href="http://developer.android.com/training/accessibility/accessible-app.html">Developing Accessible Applications</a></p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>A starter kit using only npm scripts for Jekyll static websites</title>
+		<link>/a-starter-kit-using-only-npm-scripts-for-jekyll-static-websites/</link>
+		<pubDate>Sun, 03 Apr 2016 15:28:38 +0000</pubDate>
+		<dc:creator><![CDATA[ad30jone]]></dc:creator>
+				<category><![CDATA[Engineering]]></category>
+
+		<guid isPermaLink="false">/?p=25</guid>
+		<description><![CDATA[When I originally started using Jekyll, I used Gulp JS for my build system. During a discussion with a colleague, he told me that I could achieve the similar functionality by using npm scripts alone. I decided to try and replace my Gulpfile with npm scripts alone. Out of this conversation came Jekyll Starter Kit,&#8230;]]></description>
+				<content:encoded><![CDATA[<p>When I originally started using Jekyll, I used Gulp JS for my build system. During a discussion with a colleague, he told me that I could achieve the similar functionality by using npm scripts alone. I decided to try and replace my Gulpfile with npm scripts alone.</p>
+<p>Out of this conversation came Jekyll Starter Kit, which is a project boilerplate with configurable tools for static site development. These tools provide synchronized cross-device testing with a focus on performance. This is a good starting point for developers who want to build a Jekyll site with fewer layers of abstraction in their tooling.</p>
+<h4>How it Works</h4>
+<p>Below is a snippet of the <a href="https://github.com/tony-jones/jekyll-starter-kit/blob/gh-pages/package.json">package.json</a> file. With NPM run scripts, you can define strings which will be run on the command line when you invoke the script. For example, you could have a script called &#8220;build&#8221; that runs other commands. You can also run any Unix or Windows command in the package.json file!</p>
+<pre><code>
+{
+  "name": "jekyll-starter-kit",
+  "version": "1.0.0",
+  "description": "jekyll, asset build using npm scripts",
+  "main": "src/scripts/main.js",
+  "scripts": {
+    "build:jekyll": "jekyll build --config _config.yml,_config-dev.yml",
+    "build:js": "npm run eslint &amp;amp;&amp;amp; npm run uglify",
+    "build:css": "npm run sass &amp;amp;&amp;amp; npm run prefix",
+    "build:font": "npm run font",
+    "build:images": "npm run imagemin",
+    "build": "npm run clean &amp;amp;&amp;amp; npm run build:js &amp;amp;&amp;amp; npm run build:css
+              &amp;amp;&amp;amp; npm run build:jekyll &amp;amp;&amp;amp; npm run critical"
+  }
+}
+</code>
+</pre>
+<p><a href="https://github.com/tony-jones/jekyll-starter-kit/releases/latest"><img class="wp-image-945 size-full aligncenter" src="/wp-content/uploads/2016/04/jsk-alpha.jpg" alt="" width="1010" height="650" srcset="/wp-content/uploads/2016/04/jsk-alpha.jpg 1010w, /wp-content/uploads/2016/04/jsk-alpha-300x193.jpg 300w, /wp-content/uploads/2016/04/jsk-alpha-768x494.jpg 768w, /wp-content/uploads/2016/04/jsk-alpha-900x579.jpg 900w" sizes="(max-width: 1010px) 100vw, 1010px" /></a></p>
+<h4>Performance</h4>
+<p>Jekyll Starter Kit strives to give you a high-performance starting point out of the box. By default, your project will have a 99/100 on PageSpeed Insights. You will need to add caching on your server (8 days recommended) to bring it to 100/100.</p>
+<p><img class="aligncenter wp-image-946 size-full" src="/wp-content/uploads/2016/04/f246f650-ce4c-11e5-9508-3d135978a6c9.png" alt="" width="1182" height="335" srcset="/wp-content/uploads/2016/04/f246f650-ce4c-11e5-9508-3d135978a6c9.png 1182w, /wp-content/uploads/2016/04/f246f650-ce4c-11e5-9508-3d135978a6c9-300x85.png 300w, /wp-content/uploads/2016/04/f246f650-ce4c-11e5-9508-3d135978a6c9-768x218.png 768w, /wp-content/uploads/2016/04/f246f650-ce4c-11e5-9508-3d135978a6c9-1024x290.png 1024w, /wp-content/uploads/2016/04/f246f650-ce4c-11e5-9508-3d135978a6c9-900x255.png 900w" sizes="(max-width: 1182px) 100vw, 1182px" /></p>
+<p>&nbsp;</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>Accessible Typography for Designers</title>
+		<link>/accessible-typography-for-designers/</link>
+		<pubDate>Sat, 19 Sep 2015 15:35:34 +0000</pubDate>
+		<dc:creator><![CDATA[ad30jone]]></dc:creator>
+				<category><![CDATA[Design]]></category>
+
+		<guid isPermaLink="false">/?p=31</guid>
+		<description><![CDATA[Typographical considerations that designers should know and implement When designing user interfaces, you must keep things like proper readability, appropriate spacing, line heights, and users with low vision in mind. Accessible typography is one of the most crucial components of design to understand and implement correctly. Designers should be implementing style guides containing typography details,&#8230;]]></description>
+				<content:encoded><![CDATA[<h4><strong>Typographical considerations that designers should know and implement</strong></h4>
+<p>When designing user interfaces, you must keep things like proper readability, appropriate spacing, line heights, and users with low vision in mind. Accessible typography is one of the most crucial components of design to understand and implement correctly. Designers should be implementing style guides containing typography details, best practices, and standards for components to help bring accessible interfaces to organizations.</p>
+<h4>Choosing a Typeface</h4>
+<p>A well-chosen font can give your organization credibility, users increased reading pleasure, and trigger different emotions.</p>
+<h5>Aesthetics</h5>
+<p>Make sure the typeface is well suited for the audience it is intended. Think about what each font says to you and make sure it aligns with the goal, organization, or overall mood of the application.</p>
+<h5>Experiment</h5>
+<p>Try out the typeface on your design, so you can see it in the context of the structure of your application. Either use software like Sketch to see the changes or if you are working in the browser, create a SASS variable to easily swap out the fonts globally. I find that this is the best way for me to choose fonts.</p>
+<h5>Read Them</h5>
+<p>While you are experimenting with different fonts, it is important to read them. Actually read them by spending time reading large amounts of text. You will be able to quickly eliminate fonts that don’t fit by simply doing this one thing.</p>
+<h5>Trust Your Gut</h5>
+<p>Sometimes the choice of fonts doesn’t have to be a mostly technical ordeal. Many times you will just see the perfect font for your design when you see it.</p>
+<p>Lastly, I suggest using sites like <a href="https://typ.io/">Typ.io</a> to help you find nice font combinations that others are using.</p>
+<h4>Color &amp; Contrast</h4>
+<p>Some users with low vision will adjust the contrast levels of their screens. To accommodate for this, designers should ensure that their applications meet WCAG 2.0 level AA requirements at a minimum. This requires a contrast ratio of 4.5:1 for normal text and 3:1 for large text (14 point and bold or larger, or 18 point or larger).</p>
+<p>This can easily be verified by using a WebAIM’s <a href="http://webaim.org/resources/contrastchecker/">Contrast Checker</a>. I also recommend that designers begin the design process by using accessible <a href="http://colorsafe.co/">color palettes</a>.</p>
+<p>Most typefaces were designed to be printed with black ink on a light background, so you need to be careful when choosing a typeface reversed out of a dark background. Keep in mind font weight, style, and overall readability when your background is dark.</p>
+<h4>Line Length</h4>
+<h5>Body Text</h5>
+<p>The optimal line length for your body text is considered to be 50-60 characters(<a href="https://baymard.com/blog/line-length-readability">Baymard</a>). I use the <a href="https://chrome.google.com/webstore/detail/word-character-count-tool/ibjgdahgcdkpdlbkadidojhfddflblcm?hl=en">Word &amp; Character Count</a> chrome extension to see how long lines are. Personally, I prefer the characters per line to be between 60 and 80 characters when I am reading.</p>
+<h5>Short Lines</h5>
+<p>For short lines, the optimal line length is considered to be about 15-30 characters</p>
+<h4>Text Styles</h4>
+<p>Designers should limit the number of text sizes and styles to keep a clean and readable feel to their applications. Frameworks like <a href="http://getbootstrap.com/">Bootstrap</a>, <a href="http://materializecss.com/">Materialize</a>, and <a href="http://www.getmdl.io/">Material Design Lite</a> will have base typographic scales already built in for developers. Google recommends having a basic set of styles that are based on a typographic scale of 12, 14, 16, 20, and 34.</p>
+<p>For further reading, I would recommend going through Google’s <a href="https://www.google.com/design/spec/style/typography.html">Design Spec</a> and IBM’s <a href="https://www.ibm.com/design/language/">Design Language</a>.</p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>UVA Library Web Accessibility Presentation</title>
+		<link>/uva-library-web-accessibility-presentation/</link>
+		<pubDate>Sat, 19 Sep 2015 15:34:51 +0000</pubDate>
+		<dc:creator><![CDATA[ad30jone]]></dc:creator>
+				<category><![CDATA[Presentations]]></category>
+
+		<guid isPermaLink="false">/?p=29</guid>
+		<description><![CDATA[Creating an open and fair opportunity for all users to use web technologies]]></description>
+				<content:encoded><![CDATA[<h4><strong>Creating an open and fair opportunity for all users to use web technologies</strong></h4>
+<p><iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRSosB8ELDorTEXCskeyfq4pr1VWR3D8g4f33OjpbKFPjWS96dgViGS5n5y8Y6ni3rvD7-3WV_na4bT/embed?start=false&amp;loop=false&amp;delayms=5000" width="100%" height="839" frameborder="0" allowfullscreen="allowfullscreen" data-mce-fragment="1"></iframe></p>
+]]></content:encoded>
+			</item>
+		<item>
+		<title>12 Steps Towards Better Web Accessibility</title>
+		<link>/12-steps-towards-better-web-accessibility/</link>
+		<pubDate>Sat, 06 Jun 2015 15:56:56 +0000</pubDate>
+		<dc:creator><![CDATA[ad30jone]]></dc:creator>
+				<category><![CDATA[Design]]></category>
+
+		<guid isPermaLink="false">/?p=36</guid>
+		<description><![CDATA[A review of my presentation on accessibility at the University of Virginia Library Providing students, employees, and the general public with the necessary tools to learn and do their jobs is a moral and legal obligation to every organization. Technology that accommodates all users benefits everyone and makes for a better world. The principle of&#8230;]]></description>
+				<content:encoded><![CDATA[<h4><strong>A review of my presentation on accessibility at the University of Virginia Library</strong></h4>
+<p>Providing students, employees, and the general public with the necessary tools to learn and do their jobs is a moral and legal obligation to every organization. Technology that accommodates all users benefits everyone and makes for a better world.</p>
+<p>The principle of universal design states that any document, tool, website, or application should be accessible to users regardless of the instrument (visual browser, screen reader, mobile device, slow internet connection, keyboard-only users, etc.).</p>
+<p>Organizations benefit from integrating accessibility practices into their business processes and software development. For example, a digitizer at a library may use an OCR to scan newspapers and then a software developer can provide a searchable document then can be read by a screen reader or create a text transcript of the item. Blind users can then hear information that was once only visual. Users with low reading abilities, poor vision, and language barriers would also benefit from this implementation.</p>
+<p>Making systems accessible not only ensures equal access to information but as the above example showed, also benefits users without disabilities by allowing them to customize their experiences.</p>
+<p>Today, I have highlighted 12 steps towards Universal Design that can be implemented in your organization today. Enjoy!</p>
+<h4>Webpage Should Be Keyboard Navigable</h4>
+<p>The default keyboard navigation order must be logical and intuitive. This generally means that it follows the visual flow of the page – left to right, top to bottom (i.e., header first, then main navigation, then maybe page navigation, and finally the footer).</p>
+<h4>Create Accessible Forms</h4>
+<p>Instructions, cues, required form fields, field formatting requirements, etc. should be clearly identified. Many users can only use a keyboard to navigate the web. You must ensure that the forms on your website can be completed using only the keyboard. If either client-side or server-side validation detects errors on forms, then the focus should go to the error elements, alerting a screen reader that there are problems with submission, ensuring usable and accessible error recovery</p>
+<h4>Don’t Use Color Alone to Convey Information</h4>
+<p>Web pages should be designed so that all information conveyed with color is also available without color. To test this requirement, there are some browser plugins that remove color from web pages.</p>
+<h4>Validate Your WebPages</h4>
+<p>The topics listed here cover the majority of web accessibility issues. However, to ensure that your pages comply with ADA/Section 508 Standards, check them with a free web accessibility checker.<br />
+• <a href="http://wave.webaim.org/">http://wave.webaim.org/</a><br />
+• <a href="http://cynthiasays.com/">http://cynthiasays.com/</a><br />
+• <a href="https://www.cryptzone.com/products/compliance-sheriff">Compliance Sheriff</a></p>
+<h4>Avoid Using Frames</h4>
+<p>Frames are not inaccessible to modern screen readers, but they can be disorienting. If you use frames, give each frame a descriptive title attribute value. Keyboard shortcuts allow the<br />
+reader to jump quickly between frames, so brief and descriptive titles are a necessity</p>
+<h4>Make Scanned Content Accessible Using Full-text Search and OCR</h4>
+<p>Scanned items such as newspapers should have text transcripts available. OCR technology directly converts scanned paper documents that are laser-printed or typewritten files into editable text.</p>
+<h4>Caption all Videos</h4>
+<p>Captions are the text versions of the spoken word presented within multimedia. Although captioning is primarily intended for those who cannot hear audio content, it has also been found to help those who can hear the audio content. For example, non-native language speakers can benefit from captions. Captions should be synchronized with the audio in the multimedia.</p>
+<h4>Provide Text Transcripts</h4>
+<p>Transcripts allow anyone who cannot access content from web audio or video to read text instead. Transcripts do not have to be verbatim but should contain additional descriptions, explanations, or comments that may be beneficial, such as indications of laughter or an<br />
+explosion. Transcripts also allow the content of multimedia to be searchable.</p>
+<h4>Ensure Javascript is Accessible</h4>
+<p>Some event handlers are dependent upon the use of a mouse or keyboard. These are called device-dependent event handlers. Other event handlers are device independent and are triggered by<br />
+both the mouse and keyboard or by other means. To ensure accessibility, use a device independent event handler (one that works with both the mouse and the keyboard).</p>
+<h4>Documents Should be Accessible</h4>
+<p>PDFs and other office application documents should be accessible. Authors<br />
+of accessible PDF documents add descriptive alternate text to page elements that are typically presented not as text but only as visual elements, such as graphics, figures, form fields, and links. When screen readers encounter alternate text, they can interpret the element and read its alternate text description aloud.</p>
+<h4>Alternate Descriptions Should Be Provided for all Photos and Graphics</h4>
+<p>When you add images (photos, graphics, logos) to your web page, you must also provide “alternative language tag” (ALT) descriptions for each one. Alt tags for space or design images and images that do not provide content should be empty (alt=” “). Screen readers, Braille displays, and other assistive technologies will relay your alternative text to visitors who use such adaptive devices, providing them with a “comparable experience” to that of sighted visitors. Some browsers will display your ALT descriptions when users run their cursors over the image.</p>
+<h4>Presentation and Structure Need to Be Separate</h4>
+<p>Some users input their own custom CSS stylesheets to improve readability. To make this possible, the structure (HTML) of our web pages needs to be separate from our styles (CSS). Users should be able to select fonts, color, margins, and size.</p>
+<h4>Further Information on Accessibility</h4>
+<p>I encourage everyone, especially web developers to read and reference the following sources.</p>
+<p>• <a href="http://webaim.org/articles/">Guide to Web Accessibility</a><br />
+• <a href="http://www.w3.org/TR/mobile-bp/">Mobile Web Best Practices</a></p>
+]]></content:encoded>
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Presentations &#8211; Tony Jones | Product Designer</title>
+	<atom:link href="/category/presentations/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Designer and Engineer from New York</description>
+	<lastBuildDate>Tue, 17 Jul 2018 08:11:33 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.7</generator>
+	<item>
+		<title>UVA Library Web Accessibility Presentation</title>
+		<link>/uva-library-web-accessibility-presentation/</link>
+		<pubDate>Sat, 19 Sep 2015 15:34:51 +0000</pubDate>
+		<dc:creator><![CDATA[ad30jone]]></dc:creator>
+				<category><![CDATA[Presentations]]></category>
+
+		<guid isPermaLink="false">/?p=29</guid>
+		<description><![CDATA[Creating an open and fair opportunity for all users to use web technologies]]></description>
+				<content:encoded><![CDATA[<h4><strong>Creating an open and fair opportunity for all users to use web technologies</strong></h4>
+<p><iframe src="https://docs.google.com/presentation/d/e/2PACX-1vRSosB8ELDorTEXCskeyfq4pr1VWR3D8g4f33OjpbKFPjWS96dgViGS5n5y8Y6ni3rvD7-3WV_na4bT/embed?start=false&amp;loop=false&amp;delayms=5000" width="100%" height="839" frameborder="0" allowfullscreen="allowfullscreen" data-mce-fragment="1"></iframe></p>
+]]></content:encoded>
+			</item>
+	</channel>
+</rss>
