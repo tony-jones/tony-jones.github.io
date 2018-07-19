@@ -6,8 +6,8 @@
  */
  
 const cacheName = 'tonybagels.com-superpwa-1.8.1';
-const startPage = 'tonybagels.com';
-const offlinePage = 'tonybagels.com';
+const startPage = 'https://tonybagels.com';
+const offlinePage = 'https://tonybagels.com';
 const fallbackImage = '/wp-content/uploads/2018/04/logo-green-light.png';
 const filesToCache = [startPage, offlinePage, fallbackImage];
 const neverCacheUrls = [/\/wp-admin/,/\/wp-login/,/preview=true/];
