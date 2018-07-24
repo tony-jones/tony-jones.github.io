@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<base href="https://tonybagels.com" />
+
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	
+	
+		<!-- Manifest added by SuperPWA - Progressive Web Apps Plugin For WordPress -->
+<link rel="manifest" href="/superpwa-manifest.json">
+<meta name="theme-color" content="#D5E0EB">
+<!-- / SuperPWA.com -->
+<meta http-equiv="x-dns-prefetch-control" content="on">
+	<link rel="dns-prefetch" href="//fonts.googleapis.com" />
+	<link rel="dns-prefetch" href="//fonts.gstatic.com" />
+	<link rel="dns-prefetch" href="//0.gravatar.com/" />
+	<link rel="dns-prefetch" href="//2.gravatar.com/" />
+	<link rel="dns-prefetch" href="//1.gravatar.com/" /><title>Page not found &#8211; Tony Jones | Product Designer</title>
+<meta name='robots' content='noindex,follow' />
+<link rel='dns-prefetch' href='//use.typekit.net' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+
+
+
+<link rel='stylesheet' id='thb-app-css'  href='https://tonybagels.com/contents/ui/theme/assets/css/app.css' type='text/css' media='all' />
+<style id='thb-app-inline-css' type='text/css'>
+h1,h2,h3,h4,h5,h6,blockquote p,.thb-portfolio-filter .filters,.thb-portfolio .type-portfolio.hover-style5 .thb-categories {font-family:'Muli', 'BlinkMacSystemFont', -apple-system, 'Roboto', 'Lucida Sans';}body {font-family:'Muli', 'BlinkMacSystemFont', -apple-system, 'Roboto', 'Lucida Sans';}h1,.h1 {font-weight:300;}h2 {font-weight:300;}h3 {font-weight:300;}h4 {font-weight:300;}h5 {font-weight:300;}h6 {font-weight:300;}.footer p,.footer .widget p, .footer .widget ul li {font-family:'Muli', 'BlinkMacSystemFont', -apple-system, 'Roboto', 'Lucida Sans';}#full-menu .sf-menu > li > a {font-weight:300;text-transform:none !important;}#full-menu .sub-menu li a {font-weight:300;text-transform:none !important;}input[type="submit"],.button,.btn {font-family:'Muli', 'BlinkMacSystemFont', -apple-system, 'Roboto', 'Lucida Sans';}.mobile-menu a {font-family:'Muli', 'BlinkMacSystemFont', -apple-system, 'Roboto', 'Lucida Sans';}.footer .widget h6 {font-family:'Muli', 'BlinkMacSystemFont', -apple-system, 'Roboto', 'Lucida Sans';}.header .logolink .logoimg {max-height:30px;}.underline-link:after, .products .product .product_after_title .button:after, .wpb_text_column a:after, .widget.widget_price_filter .price_slider .ui-slider-handle, .btn.style5, .button.style5, input[type=submit].style5, .btn.style6, .button.style6, input[type=submit].style6, .btn.accent, .btn#place_order, .btn.checkout-button, .button.accent, .button#place_order, .button.checkout-button, input[type=submit].accent, input[type=submit]#place_order, input[type=submit].checkout-button,.products .product .product_after_title .button:after, .woocommerce-tabs .tabs li a:after, .woocommerce-MyAccount-navigation ul li:hover a, .woocommerce-MyAccount-navigation ul li.is-active a, .thb-client-row.has-border.thb-opacity.with-accent .thb-client:hover, .product-page .product-information .single_add_to_cart_button:hover {border-color:#ffc3d0;}.woocommerce-MyAccount-navigation ul li:hover + li a, .woocommerce-MyAccount-navigation ul li.is-active + li a {border-top-color:#ffc3d0;}a:hover, #full-menu .sf-menu > li.current-menu-item > a, #full-menu .sf-menu > li.sfHover > a, #full-menu .sf-menu > li > a:hover, .header_full_menu_submenu_color_style2 #full-menu .sub-menu a:hover, #full-menu .sub-menu li a:hover, .footer.style1 .social-links a.email:hover, .post .post-title a:hover, .widget.widget_recent_entries ul li .url, .widget.widget_recent_comments ul li .url, .widget.woocommerce.widget_layered_nav ul li .count, .widget.widget_price_filter .price_slider_amount .button, .widget.widget_price_filter .price_slider_amount .button:hover, .pagination .page-numbers.current, .btn.style3:before, .button.style3:before, input[type=submit].style3:before, .btn.style5:hover, .button.style5:hover, input[type=submit].style5:hover, .mobile-menu > li.current-menu-item > a, .mobile-menu > li.sfHover > a, .mobile-menu > li > a:hover, .mobile-menu > li > a.active, .mobile-menu .sub-menu li a:hover, .authorpage .author-content .square-icon:hover, .authorpage .author-content .square-icon.email:hover, #comments .commentlist .comment .reply, #comments .commentlist .comment .reply a, .thb-portfolio-filter.style1 .filters li a:hover, .thb-portfolio-filter.style1 .filters li a.active, .products .product .product_after_title .button, .product-page .product-information .price,.product-page .product-information .reset_variations, .product-page .product-information .product_meta > span a, .woocommerce-tabs .tabs li a:hover, .woocommerce-tabs .tabs li.active a, .woocommerce-info a:not(.button), .email:hover, .thb-iconbox.type3 > span, .thb_twitter_container.style1 .thb_tweet a{color:#ffc3d0;}.post.blog-style7 .post-gallery, .widget.widget_price_filter .price_slider .ui-slider-range, .btn.style5, .button.style5, input[type=submit].style5, .btn.style6, .button.style6, input[type=submit].style6, .btn.accent, .btn#place_order, .btn.checkout-button, .button.accent, .button#place_order, .button.checkout-button, input[type=submit].accent, input[type=submit]#place_order, input[type=submit].checkout-button, .content404 figure, .style2 .mobile-menu > li > a:before, .thb-portfolio.thb-text-style2 .type-portfolio:hover, .thb-portfolio-filter.style2 .filters li a:before, .woocommerce-MyAccount-navigation ul li:hover a, .woocommerce-MyAccount-navigation ul li.is-active a, .email.boxed-icon:hover, .email.boxed-icon.fill, .email.boxed-icon.white-fill:hover, .thb-iconbox.type2 > span, .thb-client-row.thb-opacity.with-accent .thb-client:hover, .product-page .product-information .single_add_to_cart_button:hover, .btn.style3:before, .button.style3:before, input[type=submit].style3:before {background-color:#ffc3d0;}.mobile-menu li.menu-item-has-children > a:hover .menu_icon {fill:#ffc3d0;}.thb-counter figure svg path,.thb-counter figure svg circle,.thb-counter figure svg rect,.thb-counter figure svg ellipse {stroke:#ffc3d0;}.button.checkout-button:hover,input[type=submit]#place_order:hover,.btn.accent:hover,.btn.style6:hover, .button.style6:hover, input[type=submit].style6:hover {background-color:#e6b0bb;border-color:#e6b0bb;}body.page-id-0 #wrapper [role="main"] {;}.thb-portfolio .post-722.type-portfolio.portfolio-style1:not(.hover-style6) .portfolio-link,.thb-portfolio .post-722.type-portfolio.portfolio-text-style-2:hover,#qp-portfolio-722:hover .qp-content {background:#d7ede6;}.thb-portfolio .post-722.type-portfolio.portfolio-style1.hover-style7 .portfolio-link {background:transparent;}.thb-portfolio .post-722.type-portfolio.portfolio-style1.hover-style7 .thb-placeholder:before {background:#d7ede6;}.thb-portfolio .post-79.type-portfolio.portfolio-style1:not(.hover-style6) .portfolio-link,.thb-portfolio .post-79.type-portfolio.portfolio-text-style-2:hover,#qp-portfolio-79:hover .qp-content {background:#ffe0e7;}.thb-portfolio .post-79.type-portfolio.portfolio-style1.hover-style7 .portfolio-link {background:transparent;}.thb-portfolio .post-79.type-portfolio.portfolio-style1.hover-style7 .thb-placeholder:before {background:#ffe0e7;}.thb-portfolio .post-54.type-portfolio.portfolio-style1:not(.hover-style6) .portfolio-link,.thb-portfolio .post-54.type-portfolio.portfolio-text-style-2:hover,#qp-portfolio-54:hover .qp-content {background:#ffe3d6;}.thb-portfolio .post-54.type-portfolio.portfolio-style1.hover-style7 .portfolio-link {background:transparent;}.thb-portfolio .post-54.type-portfolio.portfolio-style1.hover-style7 .thb-placeholder:before {background:#ffe3d6;}.thb-portfolio .post-13.type-portfolio.portfolio-style1:not(.hover-style6) .portfolio-link,.thb-portfolio .post-13.type-portfolio.portfolio-text-style-2:hover,#qp-portfolio-13:hover .qp-content {background:#cbcbf4;}.thb-portfolio .post-13.type-portfolio.portfolio-style1.hover-style7 .portfolio-link {background:transparent;}.thb-portfolio .post-13.type-portfolio.portfolio-style1.hover-style7 .thb-placeholder:before {background:#cbcbf4;}.thb-portfolio .post-50.type-portfolio.portfolio-style1:not(.hover-style6) .portfolio-link,.thb-portfolio .post-50.type-portfolio.portfolio-text-style-2:hover,#qp-portfolio-50:hover .qp-content {background:#e8e8e8;}.thb-portfolio .post-50.type-portfolio.portfolio-style1.hover-style7 .portfolio-link {background:transparent;}.thb-portfolio .post-50.type-portfolio.portfolio-style1.hover-style7 .thb-placeholder:before {background:#e8e8e8;}.thb-portfolio .post-60.type-portfolio.portfolio-style1:not(.hover-style6) .portfolio-link,.thb-portfolio .post-60.type-portfolio.portfolio-text-style-2:hover,#qp-portfolio-60:hover .qp-content {background:#d0efe6;}.thb-portfolio .post-60.type-portfolio.portfolio-style1.hover-style7 .portfolio-link {background:transparent;}.thb-portfolio .post-60.type-portfolio.portfolio-style1.hover-style7 .thb-placeholder:before {background:#d0efe6;}.thb-portfolio .post-57.type-portfolio.portfolio-style1:not(.hover-style6) .portfolio-link,.thb-portfolio .post-57.type-portfolio.portfolio-text-style-2:hover,#qp-portfolio-57:hover .qp-content {background:#e5e5e5;}.thb-portfolio .post-57.type-portfolio.portfolio-style1.hover-style7 .portfolio-link {background:transparent;}.thb-portfolio .post-57.type-portfolio.portfolio-style1.hover-style7 .thb-placeholder:before {background:#e5e5e5;}p a { color:#ff89a3;}.thb-portfolio .type-portfolio .thb-categories {text-transform:none;font-size:14px;}.thb_styled_header.style1 {font-weight:300;letter-spacing:-0.03em;font-size:56px;text-transform:none;}blockquote p {font-weight:300;}.wpb_single_image .vc_figure-caption {margin-top:25px !important;font-style:italic !important;font-size:16px !important;color:#96a3ad !important;line-height:16px !important;}.hljs {padding:1.5em !important;background:#f7fbff !important;border-radius:5px !important;}.m-b-16 {margin-bottom:16px !important;}.style2 .mobile-menu>li>a {font-weight:300;}.journal-title {text-align:center; margin-bottom:5px;}.journal-description {text-align:center; }#full-menu .sf-menu > li > a:hover,#full-menu .sf-menu > li.current-menu-item > a {color:#ff1b4c;}@media only screen and (min-width:40.063em) {.post.blog-style6 .row {padding:35px 25px;}}
+</style>
+<link rel='stylesheet' id='thb-style-css'  href='https://tonybagels.com/contents/ui/theme/style.css' type='text/css' media='all' />
+<link rel='stylesheet' id='thb-google-fonts-css'  href='https://fonts.googleapis.com/css?family=Muli%3A300%2C400%2C500%2C600%2C700&#038;subset=latin&#038;ver=4.9.7' type='text/css' media='all' />
+<script type='text/javascript' src='https://tonybagels.com/inc/js/jquery/jquery.js'></script>
+<script type='text/javascript' src='https://tonybagels.com/inc/js/jquery/jquery-migrate.min.js'></script>
+<script type='text/javascript' src='https://use.typekit.net/jkc5bgx.js'></script>
+<script type='text/javascript'>
+try{Typekit.load({ async: true });}catch(e){}
+</script>
+
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/contents/data/fbrfg/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/contents/data/fbrfg/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/contents/data/fbrfg/favicon-16x16.png">
+<link rel="manifest" href="/contents/data/fbrfg/site.webmanifest">
+<link rel="shortcut icon" href="/contents/data/fbrfg/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="/contents/data/fbrfg/browserconfig.xml">
+<meta name="theme-color" content="#ffffff"><style type="text/css" id="custom-background-css">
+body.custom-background { background-color: #ffffff; }
+</style>
+		<style type="text/css" id="wp-custom-css">
+			.thb-portfolio .type-portfolio.portfolio-style2:hover .thb-placeholder {
+    opacity: 1;
+	  transform: scale(.97);
+}
+
+.thb-portfolio .type-portfolio.portfolio-style2 .portfolio-inner {
+    background: transparent;
+}
+
+.thb-portfolio .type-portfolio.portfolio-style2 .thb-placeholder, 
+.thb-portfolio-filter.style2 .filters li a:before {
+    -moz-transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+    -o-transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+    -webkit-transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+}		</style>
+	<noscript><style type="text/css"> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript></head>
+<body class="error404 custom-background mobile_menu_position_right mobile_menu_style_style2 header_style_style2 header_full_menu_off footer_style_style2 site_bars_on preloader_on header_full_menu_submenu_color_style1 footer_simple_fixed_off  wpb-js-composer js-comp-ver-5.5.2 vc_responsive">
+<!-- Start Loader -->
+<div class="pace"></div>
+<!-- End Loader -->
+<div id="wrapper" class="open">
+	
+	<!-- Start Mobile Menu -->
+	<nav id="mobile-menu" class="style2">
+	<div class="spacer"></div>
+	<div class="menu-container custom_scroll">
+		<a href="#" class="panel-close"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" enable-background="new 0 0 64 64"><g fill="none" stroke="#000" stroke-width="2" stroke-miterlimit="10"><path d="m18.947 17.15l26.1 25.903"/><path d="m19.05 43.15l25.902-26.1"/></g></svg></a>
+		<div class="menu-holder">
+						  <ul id="menu-navigation" class="mobile-menu"><li id="menu-item-512" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-512"><a href="#">Projects</a>
+<ul class="sub-menu " >
+	<li id="menu-item-972" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-972"><a href="/portfolio/annual-payments/">Annual Payments</a></li>
+	<li id="menu-item-973" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-973"><a href="/portfolio/help-scout-customer-sidebar/">Customer Sidebar</a></li>
+	<li id="menu-item-974" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-974"><a href="/portfolio/uva-library/">Library Homepage</a></li>
+	<li id="menu-item-975" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-975"><a href="/portfolio/fitden/">Fitden</a></li>
+	<li id="menu-item-976" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-976"><a href="/portfolio/nooz/">Nooz</a></li>
+	<li id="menu-item-977" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-977"><a href="/portfolio/libra-repository/">Libra Repository</a></li>
+	<li id="menu-item-978" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-978"><a href="/portfolio/metis-machine/">Metis Machine</a></li>
+</ul>
+</li>
+<li id="menu-item-956" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-956"><a href="https://tonybagels.com/about/">About</a></li>
+<li id="menu-item-1038" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1038"><a href="https://tonybagels.com/sketches/">Sketches</a></li>
+<li id="menu-item-573" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-573"><a href="https://tonybagels.com/blog/">Blog</a></li>
+</ul>					</div>
+		
+		<div class="menu-footer">
+			<p>&nbsp;</p>
+<p><a href="mailto:ad30jone@gmail.com"><strong>ad30jone@gmail.com</strong></a></p>			<div class="social-links">
+							<a href="https://dribbble.com/iamtonybagels" class="dribbble icon-1x" target="_blank">
+				<i class="fa fa-dribbble"></i>
+							</a>			<a href="https://twitter.com/iamtonybagels" class="twitter icon-1x" target="_blank">
+				<i class="fa fa-twitter"></i>
+							</a>			<a href="https://github.com/tony-jones" class="github icon-1x" target="_blank">
+				<i class="fa fa-github"></i>
+							</a>			<a href="https://www.instagram.com/iamtonybagels/" class="instagram icon-1x" target="_blank">
+				<i class="fa fa-instagram"></i>
+							</a>			<a href="https://www.linkedin.com/in/tony-jones-18690b33" class="linkedin icon-1x" target="_blank">
+				<i class="fa fa-linkedin"></i>
+							</a>			</div>
+					</div>
+	</div>
+</nav>	<!-- End Mobile Menu -->
+	
+	<!-- Start Quick Cart -->
+		<!-- End Quick Cart -->
+		
+	<!-- Start Header -->
+	<header class="header style2">
+	<div class="row align-middle full-width-row no-padding ">
+		<div class="small-12 columns">
+			<div class="logo-holder">
+								<a href="https://tonybagels.com/" class="logolink">
+					<img src="https://tonybagels.com/contents/data/2018/04/logo-green-light.png" class="logoimg" alt="Tony Jones | Product Designer"/>
+				</a>
+			</div>
+			<div class="menu-holder icon-holder">
+													<nav id="full-menu" role="navigation">
+												  <ul id="menu-navigation-1" class="sf-menu"><li id="menu-item-512" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-512"><a href="#">Projects</a>
+<ul class="sub-menu " >
+	<li id="menu-item-972" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-972"><a href="/portfolio/annual-payments/">Annual Payments</a></li>
+	<li id="menu-item-973" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-973"><a href="/portfolio/help-scout-customer-sidebar/">Customer Sidebar</a></li>
+	<li id="menu-item-974" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-974"><a href="/portfolio/uva-library/">Library Homepage</a></li>
+	<li id="menu-item-975" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-975"><a href="/portfolio/fitden/">Fitden</a></li>
+	<li id="menu-item-976" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-976"><a href="/portfolio/nooz/">Nooz</a></li>
+	<li id="menu-item-977" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-977"><a href="/portfolio/libra-repository/">Libra Repository</a></li>
+	<li id="menu-item-978" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-978"><a href="/portfolio/metis-machine/">Metis Machine</a></li>
+</ul>
+</li>
+<li id="menu-item-956" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-956"><a href="https://tonybagels.com/about/">About</a></li>
+<li id="menu-item-1038" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1038"><a href="https://tonybagels.com/sketches/">Sketches</a></li>
+<li id="menu-item-573" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-573"><a href="https://tonybagels.com/blog/">Blog</a></li>
+</ul>											</nav>
+																				<a href="#" data-target="open-menu" class="mobile-toggle">
+					<div>
+						<span></span><span></span><span></span>
+					</div>
+				</a>
+							</div>
+		</div>
+	</div>
+</header>	<!-- End Header -->
+	
+			<!-- Start Left Bar -->
+		<aside id="bar-left" class="bar-side left-side site_bars_portfolio-on ">
+			<div class="abs"></div>
+					</aside>
+		<!-- End Left Bar -->
+		
+		<!-- Start Right Bar -->
+		<aside id="bar-right" class="bar-side right-side site_bars_portfolio-on active">
+			<div class="abs right-side"><strong>View All Works</strong> - Hover Me</div>
+							<div class="thb-quick-portfolio">
+					<div class="thb-quick-inner">
+													<a class="quick-portfolio dark-title" id="qp-portfolio-722" href="https://tonybagels.com/portfolio/annual-payments/">
+								<div class="figure" style="background-image: url(https://tonybagels.com/contents/data/2018/07/annual-payments-feature-241x300.jpg);"></div>
+								<div class="qp-content">
+									<h5>Annual Payments</h5>
+																		<aside class="thb-categories">Product, Web</aside>
+																	</div>
+							</a>
+													<a class="quick-portfolio dark-title" id="qp-portfolio-79" href="https://tonybagels.com/portfolio/help-scout-customer-sidebar/">
+								<div class="figure" style="background-image: url(https://tonybagels.com/contents/data/2018/07/sidebar-apps-thumb-300x225.jpg);"></div>
+								<div class="qp-content">
+									<h5>Help Scout Customer Sidebar</h5>
+																		<aside class="thb-categories">Product, Web</aside>
+																	</div>
+							</a>
+													<a class="quick-portfolio dark-title" id="qp-portfolio-13" href="https://tonybagels.com/portfolio/fitden/">
+								<div class="figure" style="background-image: url(https://tonybagels.com/contents/data/2018/07/fitden-featured-300x220.jpg);"></div>
+								<div class="qp-content">
+									<h5>Fitden</h5>
+																		<aside class="thb-categories">Mobile, Product</aside>
+																	</div>
+							</a>
+													<a class="quick-portfolio dark-title" id="qp-portfolio-50" href="https://tonybagels.com/portfolio/nooz/">
+								<div class="figure" style="background-image: url(https://tonybagels.com/contents/data/2018/07/nooz-featured-242x300.jpg);"></div>
+								<div class="qp-content">
+									<h5>Nooz</h5>
+																		<aside class="thb-categories">Mobile, Product</aside>
+																	</div>
+							</a>
+													<a class="quick-portfolio dark-title" id="qp-portfolio-54" href="https://tonybagels.com/portfolio/uva-library/">
+								<div class="figure" style="background-image: url(https://tonybagels.com/contents/data/2018/07/library-featured-241x300.jpg);"></div>
+								<div class="qp-content">
+									<h5>UVA Library Homepage</h5>
+																		<aside class="thb-categories">Product, Web</aside>
+																	</div>
+							</a>
+													<a class="quick-portfolio dark-title" id="qp-portfolio-57" href="https://tonybagels.com/portfolio/metis-machine/">
+								<div class="figure" style="background-image: url(https://tonybagels.com/contents/data/2018/07/metis-featured-241x300.jpg);"></div>
+								<div class="qp-content">
+									<h5>Metis Machine</h5>
+																		<aside class="thb-categories">Branding, Web</aside>
+																	</div>
+							</a>
+											</div>
+				</div>
+					</aside>
+		<!-- End Right Bar -->
+		
+	<div role="main" class="cf"><section class="content404">
+	<div class="row full-height-content align-middle">
+		<div class="small-12 medium-10 medium-centered large-8 columns text-center">
+			<figure></figure>
+			<h1>Page cannot be found.</h1>
+			<p>We are sorry. But the page you're looking for cannot be found. <br>
+			You might try searching our site.</p>
+			
+			<div class="small-12 medium-6 medium-centered columns">
+				<!-- Start SearchForm -->
+<form method="get" class="searchform" role="search" action="https://tonybagels.com/">
+    <fieldset>
+    	<input name="s" type="text" placeholder="Search" class="small-12">
+    </fieldset>
+</form>
+<!-- End SearchForm --> 
+			</div>
+			<a href="" class="btn">Back To Home</a>
+		</div>
+	</div>
+</section>
+	</div><!-- End role["main"] -->
+	</div> <!-- End #wrapper -->
+	<a href="#" id="scroll_totop"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" enable-background="new 0 0 64 64"><path fill="none" stroke="#000" stroke-width="2" stroke-linejoin="bevel" stroke-miterlimit="10" d="m15 40l17-17 17 17"/></svg></a>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var superpwa_sw = {"url":"\/superpwa-sw.js"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://tonybagels.com/contents/lib/super-progressive-web-apps/public/js/register-sw.js'></script>
+<script type='text/javascript' src='https://tonybagels.com/contents/ui/theme/assets/js/vendor.min.js'></script>
+<script type='text/javascript' src='https://tonybagels.com/inc/js/underscore.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var themeajax = {"url":"https:\/\/tonybagels.com\/wp-admin\/admin-ajax.php","l10n":{"loading":"Loading ...","nomore":"No More Posts","added":"Added To Cart","copied":"Copied"},"settings":{"keyboard_nav":"on","is_cart":false,"is_checkout":false},"arrows":{"left":"<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" viewBox=\"0 0 64 64\" enable-background=\"new 0 0 64 64\"><g fill=\"none\" stroke=\"#000\" stroke-width=\"2\" stroke-miterlimit=\"10\"><path d=\"m64 32h-63\"\/><path stroke-linejoin=\"bevel\" d=\"m10 23l-9 9 9 9\"\/><\/g><\/svg>","right":"<svg xmlns=\"http:\/\/www.w3.org\/2000\/svg\" viewBox=\"0 0 64 64\" enable-background=\"new 0 0 64 64\"><g fill=\"none\" stroke=\"#000\" stroke-width=\"2\" stroke-miterlimit=\"10\"><path d=\"m0 32h63\"\/><path stroke-linejoin=\"bevel\" d=\"m54 41l9-9-9-9\"\/><\/g><\/svg>"}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://tonybagels.com/contents/ui/theme/assets/js/app.min.js'></script>
+</body>
+</html>

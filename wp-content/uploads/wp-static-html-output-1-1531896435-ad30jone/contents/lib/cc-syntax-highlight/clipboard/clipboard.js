@@ -1,0 +1,1 @@
+var snippets=document.querySelectorAll('pre code');[].forEach.call(snippets,function(snippet){snippet.insertAdjacentHTML('beforebegin','<button class="clipboard"><img src="/contents/lib/cc-syntax-highlight/clipboard/clipboard.svg" /></button>');});var clipboard=new Clipboard('button.clipboard',{target:function(trigger){return trigger.nextElementSibling;}});
